@@ -1,0 +1,30 @@
+@import 'core.scss';
+
+.main {
+  background-color: var(--light);
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+.inner {
+  align-items: center;
+  border-bottom: 1px solid var(--black);
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: calc(100% - 4rem);
+
+  @media (max-width: $m) {
+    padding-top: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .logo,
+  .button {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+}

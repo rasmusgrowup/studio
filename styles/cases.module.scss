@@ -1,0 +1,60 @@
+@import 'core.scss';
+
+.wrapper {
+  margin-inline: auto;
+  margin-top: 3rem;
+  position: relative;
+  width: calc(100vw - 4rem);
+
+  @media (max-width: $m) {
+    width: calc(100vw - 2rem);
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.4rem;
+  width: 100%;
+
+  @media (max-width: $m) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  @media (max-width: $s) {
+    display: block;
+
+    .case {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .case {
+    pointer-events: none;
+  }
+
+  .case p {
+    line-height: 1.1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+
+    @media (max-width: $m) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .info {
+    margin-top: 0.75rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .url {
+    color: var(--accent);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

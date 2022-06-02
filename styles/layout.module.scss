@@ -1,0 +1,16 @@
+@import 'core.scss';
+
+.main {
+  padding-bottom: max(4vw, 3rem);
+  padding-top: max(8vw, 7rem);
+}
+
+.footer {
+  color: var(--accent);
+  margin-top: 4rem;
+  padding-left: 2rem;
+
+  @media (max-width: $m) {
+    padding-left: 1rem;
+  }
+}

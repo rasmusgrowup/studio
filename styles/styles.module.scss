@@ -11,6 +11,7 @@
 
 .h1 {
   font-size: max(5vw, 2.1rem);
+  line-height: 0.95;
   margin: 0;
   max-width: 80vw;
 
@@ -115,6 +116,10 @@
   display: flex;
   justify-content: flex-end;
   font-size: max(3.2vw, 1.5rem);
+
+  &:hover a {
+    color: var(--accent);
+  }
 }
 
 .li::before {

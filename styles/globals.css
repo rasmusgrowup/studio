@@ -52,4 +52,5 @@ h4 {
   --black: #0F0F0F;
   --light: #FFFDF8;
   --accent: #FF4500;
+  --inOut: cubic-bezier(0.87, 0, 0.13, 1);
 }

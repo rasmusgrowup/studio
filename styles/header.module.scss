@@ -7,11 +7,33 @@
   z-index: 9;
 }
 
+/* .main::after {
+  content: "";
+  background-image: url('/noisy.png');
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+} */
+
+.drawerOpen {
+  color: var(--light);
+
+  .inner {
+    //border-bottom: 1px solid var(--light);
+  }
+}
+
 .inner {
   align-items: center;
-  border-bottom: 1px solid var(--black);
+  //border-bottom: 1px solid var(--black);
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   margin-inline: auto;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -20,11 +42,5 @@
   @media (max-width: $m) {
     padding-top: 1rem;
     width: calc(100% - 2rem);
-  }
-
-  .logo,
-  .button {
-    text-transform: uppercase;
-    font-size: 1.1rem;
   }
 }

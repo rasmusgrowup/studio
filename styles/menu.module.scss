@@ -1,0 +1,81 @@
+@import 'core.scss';
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.list,
+.cases,
+.contact,
+.services {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+
+  .li,
+  .case,
+  .service {
+    cursor: pointer;
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  .li:hover,
+  .case:hover,
+  .contact:hover,
+  .service:hover {
+    color: var(--accent);
+  }
+}
+
+@media (min-width: $m) {
+  .list,
+  .cases,
+  .contact,
+  .services {
+    display: flex;
+  }
+}
+
+.hide {
+  transform: translateY(200%);
+  transition: transform 1s var(--inOut);
+}
+
+.show {
+  transform: translateY(0%);
+  transition: transform 1s 0.25s var(--inOut);
+}
+
+#luk {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+#luk::before {
+  background-color: var(--accent);
+  content: '';
+  display: inline-block;
+  border-radius: 4px;
+  height: 8px;
+  margin-right: 0.5rem;
+  width: 8px;
+}
+
+.case .a {
+  align-items: flex-start;
+  display: inline-flex;
+
+  .number {
+    font-size: 10px;
+    margin-left: 0.1rem;
+  }
+}

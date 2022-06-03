@@ -1,16 +1,43 @@
 @import 'core.scss';
 
 .main {
-  padding-bottom: max(4vw, 3rem);
-  padding-top: max(8vw, 7rem);
+  padding-bottom: max(2vw, 1.5rem);
+  padding-top: max(9vw, 9rem);
+  position: relative;
 }
 
 .footer {
   color: var(--accent);
-  margin-top: 4rem;
+  padding-bottom: max(3vw, 3rem);
   padding-left: 2rem;
+  padding-top: 2rem;
+  position: relative;
 
   @media (max-width: $m) {
     padding-left: 1rem;
   }
 }
+
+.contact {
+  margin-bottom: 2rem;
+}
+
+.contact a {
+  display: block;
+  font-size: max(2vw, 1.5rem);
+}
+
+/*
+.main::after,
+.footer::after {
+  content: "";
+  background-image: url('/noisy.png');
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+} */

@@ -5,6 +5,7 @@ import styles from '../styles/styles.module.scss'
 
 import Cases from '../components/Cases'
 import data from '../utils/references.js'
+import services from '../utils/services.js'
 
 export default function Home() {
   return (
@@ -44,12 +45,15 @@ export default function Home() {
           Services
         </h2>
         <ul className={styles.ul}>
-          <li className={styles.li}>Art direction</li>
-          <li className={styles.li}>Branding</li>
-          <li className={styles.li}>Identitetsdesign</li>
-          <li className={styles.li}>React-udvikling</li>
-          <li className={styles.li}>Shopify-løsninger</li>
-          <li className={styles.li}>GDPR</li>
+          { services.map(( { service, url }, i) => (
+            <li className={styles.li} key={i}>
+              <Link href={url}>
+                <a>
+                  {service}
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
       <section className={styles.clients}>

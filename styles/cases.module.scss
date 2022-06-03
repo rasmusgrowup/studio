@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.4rem;
+  pointer-events: none;
   width: 100%;
 
   @media (max-width: $m) {
@@ -30,18 +31,17 @@
     }
   }
 
-  .case {
-    pointer-events: none;
-  }
-
   .case p {
+    font-size: 0.9em;
     line-height: 1.1;
-    font-size: 0.8rem;
-    font-weight: 500;
     margin: 0;
 
+    @media (max-width: $l) {
+      font-size: 0.8em;
+    }
+
     @media (max-width: $m) {
-      font-size: 0.9rem;
+      font-size: 0.9em;
     }
   }
 

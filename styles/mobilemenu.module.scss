@@ -1,0 +1,142 @@
+@import 'core.scss';
+
+@media (min-width: $m) {
+  .button {
+    display: none;
+  }
+}
+
+.drawer {
+  background-color: var(--black);
+  display: block;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  z-index: -1;
+}
+
+/* .drawer::after {
+  content: "";
+  background-image: url('/noisy.png');
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+} */
+
+.open {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-between;
+  padding: 4rem 1rem;
+}
+
+.cases,
+.services {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+  transform: translateY(40px);
+  transition: all 0s var(--inOut);
+  transition-property: transform, opacity;
+  opacity: 0;
+
+  .overskrift {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .overskrift::before {
+    background-color: var(--light);
+    content: '';
+    display: inline-block;
+    height: 1px;
+    margin-right: 0.5rem;
+    width: 2rem;
+  }
+}
+
+.li a {
+  align-items: flex-start;
+  display: flex;
+  font-size: 1.6rem;
+
+  .number {
+    font-size: 10px;
+    margin-left: 0.1rem;
+  }
+}
+
+.services li,
+.services li a {
+  justify-content: flex-end;
+}
+
+.about {
+  display: block;
+  margin-top: 2rem;
+}
+
+.link {
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.link::before {
+  background-color: var(--accent);
+  content: '';
+  display: inline-block;
+  border-radius: 4px;
+  height: 8px;
+  margin-right: 0.5rem;
+  min-width: 8px;
+}
+
+.contact {
+  margin-top: 2rem;
+  transform: translateY(40px);
+  transition: all 0s var(--inOut);
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+
+.open .cases,
+.open .services,
+.open .contact {
+  transform: translateX(0px);
+  transition: all 1s 0.1s var(--inOut);
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+
+.open .services {
+  transition-delay: 0.125s;
+}
+
+.open .contact {
+  transition-delay: 0.2s;
+}
+
+.mail,
+.tel {
+  color: var(--accent);
+  display: block;
+  font-size: 1.6rem;
+}

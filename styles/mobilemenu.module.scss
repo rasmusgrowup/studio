@@ -6,6 +6,10 @@
   }
 }
 
+.button {
+  z-index: 2;
+}
+
 .drawer {
   background-color: var(--black);
   display: block;
@@ -16,7 +20,7 @@
   opacity: 0;
   pointer-events: none;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* .drawer::after {

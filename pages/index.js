@@ -9,32 +9,93 @@ import services from '../utils/services.js'
 
 import { motion } from 'framer-motion'
 
-export default function Home() {
+const titelWords = [
+  'Odenseansk',
+  'designstudie.',
+  'Vi',
+  'tilbyder',
+  'react',
+  '&',
+  'shopify',
+  'løsninger'
+];
+
+function Titel() {
   return (
     <>
-      <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      animate={{ opacity: 1, y: 0 }}
+      { titelWords.map((word, i) => (
+        <motion.div
+          className={styles.wordWrapper}>
+          <motion.span
+            initial={{ y: 60 }}
+            animate={{ y: 0}}
+            transition={{
+              duration: 2,
+              delay: 0.15 + (i / 10),
+              ease: [0.22, 1, 0.36, 1]
+            }}
+            className={styles.wordSpan}>
+            {word}
+          </motion.span>
+        </motion.div>
+      ))}
+    </>
+  )
+}
+
+export default function Home() {
+  const variants = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 2,
+        ease: [0.22, 1, 0.36, 1]
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: 50
+    },
+  }
+
+  const how = {
+    margin: '0 0 -80px 0',
+    once: true,
+  }
+
+  console.log(titelWords)
+  return (
+    <>
+      <section
       className={styles.header}>
         <h1 className={styles.h1}>
-          Digitalt design Studie fra Odense. Vi tilbyder react & shopify-løsninger
+          <Titel />
         </h1>
-        <p className={styles.tagline}>
+        <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
+        animate={{ opacity: 1, y: 0 }}
+        className={styles.tagline}>
           Visuelt design m. kommunikation & <br/>brugeren i centrum
-        </p>
-        <Link href='mailto:hello@growupstudio.dk'>
-          <a className={styles.mail}>
-            hejsa@growup.studio
-          </a>
-        </Link>
-      </motion.section>
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 1.2, delay: 2.6, ease: "easeOut" }}
+          animate={{ opacity: 1, y: 0 }}>
+          <Link href='mailto:hello@growupstudio.dk'>
+            <a className={styles.mail}>
+              hejsa@growup.studio
+            </a>
+          </Link>
+        </motion.div>
+      </section>
       <Cases />
       <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ amount: 'all', once: true }}
+        initial='hidden'
+        whileInView='visible'
+        viewport={how}
+        variants={variants}
       className={styles.about}>
         <h2 className={styles.h2}>
           Om os
@@ -53,20 +114,20 @@ export default function Home() {
       </motion.section>
       <section className={styles.services}>
         <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: 'all', once: true }}
+          initial='hidden'
+          whileInView='visible'
+          viewport={how}
+          variants={variants}
         className={styles.h2}>
           Services
         </motion.h2>
         <ul className={styles.ul}>
           { services.map(( { service, url }, i) => (
             <motion.li
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ amount: 'all', once: true }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={how}
+              variants={variants}
             className={styles.li}
             key={i}>
               <Link href={url}>
@@ -80,20 +141,20 @@ export default function Home() {
       </section>
       <section className={styles.clients}>
         <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: 'all', once: true }}
+          initial='hidden'
+          whileInView='visible'
+          viewport={how}
+          variants={variants}
         className={styles.h2}>
           Kunder
         </motion.h2>
         <ul className={styles.references}>
           { data.map(({ title, year}) => (
             <motion.li
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ amount: 'all', once: true }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={how}
+              variants={variants}
               className={styles.reference}
               key={title}>
                 {title}
@@ -105,10 +166,10 @@ export default function Home() {
         </ul>
       </section>
       <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ amount: 'all', once: true }}
+      initial='hidden'
+      whileInView='visible'
+      viewport={how}
+      variants={variants}
       className={styles.about}>
         <h2 className={styles.h2}>
           Mantra

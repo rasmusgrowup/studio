@@ -10,13 +10,25 @@
 }
 
 .h1 {
-  font-size: max(5vw, 2.1rem);
-  line-height: 0.95;
+  font-size: max(5vw, 2.2rem);
+  line-height: 1;
   margin: 0;
-  max-width: 80vw;
+  max-width: 75vw;
 
   @media (max-width: $m) {
+    line-height: 1.25;
     max-width: 100%;
+  }
+}
+
+.wordWrapper {
+  display: inline-block;
+  line-height: 0.8;
+  margin-right: 0.2em;
+  overflow: hidden;
+
+  .wordSpan {
+    display: block;
   }
 }
 

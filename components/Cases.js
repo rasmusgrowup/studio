@@ -19,7 +19,7 @@ export default function Cases() {
             url}, i) => (
             <motion.div
             initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 1, delay: (2.65 + (i / 10)), ease: "easeOut" }}
             animate={{ opacity: 1, y: 0 }}
             className={styles.case}
             key={i}>

@@ -20,12 +20,8 @@
   z-index: 0;
 } */
 
-.drawerOpen {
-  color: var(--light);
-
-  .inner {
-    //border-bottom: 1px solid var(--light);
-  }
+.logo {
+  z-index: 2;
 }
 
 .inner {
@@ -42,5 +38,13 @@
   @media (max-width: $m) {
     padding-top: 1rem;
     width: calc(100% - 2rem);
+  }
+}
+
+.drawerOpen {
+  color: var(--light);
+
+  .inner {
+    //border-bottom: 1px solid var(--light);
   }
 }

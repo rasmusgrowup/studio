@@ -1,8 +1,17 @@
 @import 'core.scss';
 
+.scroller {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
 .main {
   padding-bottom: max(2vw, 1.5rem);
-  padding-top: max(9vw, 9rem);
+  padding-top: max(6vw, 6rem);
   position: relative;
 }
 

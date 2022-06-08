@@ -3,12 +3,11 @@ import Link from "next/link"
 import Header from './Header'
 
 export default function Layout({ children }) {
+
   return (
     <>
       <Header />
-      <main className={styles.main}>
-        {children}
-      </main>
+      <main className={styles.main}>{children}</main>
       <footer className={styles.footer}>
         <div className={styles.contact}>
           <Link href='mailto:hejsa@growup.studio'>

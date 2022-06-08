@@ -7,12 +7,18 @@ import Cases from '../components/Cases'
 import data from '../utils/references.js'
 import services from '../utils/services.js'
 
+import { motion } from 'framer-motion'
+
 export default function Home() {
   return (
     <>
-      <section className={styles.header}>
+      <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      animate={{ opacity: 1, y: 0 }}
+      className={styles.header}>
         <h1 className={styles.h1}>
-          Digitalt design Studie fra Odense. Vi tilbyder react & shopify-løsninger.
+          Digitalt design Studie fra Odense. Vi tilbyder react & shopify-løsninger
         </h1>
         <p className={styles.tagline}>
           Visuelt design m. kommunikation & <br/>brugeren i centrum
@@ -22,9 +28,14 @@ export default function Home() {
             hejsa@growup.studio
           </a>
         </Link>
-      </section>
+      </motion.section>
       <Cases />
-      <section className={styles.about}>
+      <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ amount: 'all', once: true }}
+      className={styles.about}>
         <h2 className={styles.h2}>
           Om os
         </h2>
@@ -39,34 +50,66 @@ export default function Home() {
             Mere om os
           </a>
         </Link>
-      </section>
+      </motion.section>
       <section className={styles.services}>
-        <h2 className={styles.h2}>
+        <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 'all', once: true }}
+        className={styles.h2}>
           Services
-        </h2>
+        </motion.h2>
         <ul className={styles.ul}>
           { services.map(( { service, url }, i) => (
-            <li className={styles.li} key={i}>
+            <motion.li
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 'all', once: true }}
+            className={styles.li}
+            key={i}>
               <Link href={url}>
                 <a>
                   {service}
                 </a>
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </section>
       <section className={styles.clients}>
-        <h2 className={styles.h2}>
+        <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 'all', once: true }}
+        className={styles.h2}>
           Kunder
-        </h2>
+        </motion.h2>
         <ul className={styles.references}>
           { data.map(({ title, year}) => (
-            <li className={styles.reference} key={title}>{title}<span className={styles.year}>{year}</span></li>
+            <motion.li
+              initial={{ opacity: 0, y: 30 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ amount: 'all', once: true }}
+              className={styles.reference}
+              key={title}>
+                {title}
+              <span className={styles.year}>
+                {year}
+              </span>
+            </motion.li>
           ))}
         </ul>
       </section>
-      <section className={styles.about}>
+      <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ amount: 'all', once: true }}
+      className={styles.about}>
         <h2 className={styles.h2}>
           Mantra
         </h2>
@@ -81,7 +124,7 @@ export default function Home() {
             interesseret i at få et uforpligtende bud på jeres egen løsning?
           </a>
         </Link>
-      </section>
+      </motion.section>
     </>
   )
 }

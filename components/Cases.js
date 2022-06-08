@@ -3,6 +3,7 @@ import Link from "next/link"
 import styles from '../styles/cases.module.scss'
 import { useState } from 'react'
 import cases from '../utils/cases.js'
+import { motion } from 'framer-motion'
 
 export default function Cases() {
 
@@ -10,8 +11,18 @@ export default function Cases() {
     <>
       <section className={styles.wrapper}>
         <div className={styles.inner}>
-          { cases.map(({ image, title, assignments, status, url}, i) => (
-            <div className={styles.case} key={i}>
+          { cases.map(({
+            image,
+            title,
+            assignments,
+            status,
+            url}, i) => (
+            <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            animate={{ opacity: 1, y: 0 }}
+            className={styles.case}
+            key={i}>
               <Image
                 src={image}
                 layout='responsive'
@@ -34,7 +45,7 @@ export default function Cases() {
                   </a>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

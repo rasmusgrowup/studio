@@ -25,6 +25,7 @@ function Titel() {
     <>
       { titelWords.map((word, i) => (
         <motion.div
+          key={i}
           className={styles.wordWrapper}>
           <motion.span
             initial={{ y: 60 }}

@@ -48,9 +48,37 @@ h4 {
   box-sizing: border-box;
 }
 
+.noMouse:hover {
+  cursor: none;
+}
+
+.cursor {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  position: fixed;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cursorText {
+  flex: auto;
+  font-size: inherit;
+  pointer-events: none;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
 :root {
   --black: #0F0F0F;
   --light: #FFFDF8;
   --accent: #FF4500;
+  --invert: invert(#FF4500);
   --inOut: cubic-bezier(0.87, 0, 0.13, 1);
 }

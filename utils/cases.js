@@ -1,8 +1,8 @@
 const cases = [
   {
-    image: '/gambo.png',
-    title: 'Gambo Moments',
-    assignments: 'Art Direction & Shopify-løsning',
+    image: '/tinekhome.png',
+    title: 'Tinekhome',
+    assignments: 'Visuelt redesign @ tinekhome.com',
     status: 'Løbende samarbejde',
     url: '/'
   },
@@ -21,10 +21,10 @@ const cases = [
     url: '/'
   },
   {
-    image: '/digitaldogme.png',
-    title: 'Digital Dogme',
-    assignments: 'Identitetsdesign & Shopify-løsning',
-    status: 'Løbende samarbejde',
+    image: '/organic-crave.png',
+    title: 'The Organic Crave Company',
+    assignments: 'Art Direction & Shopify-løsning',
+    status: 'Afsluttet',
     url: '/'
   }
 ];

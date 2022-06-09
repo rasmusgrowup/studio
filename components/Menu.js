@@ -21,6 +21,12 @@ export default function Menu() {
     setShowServices(!showServices)
   }
 
+  var setAll = () => {
+    setShowCases(false)
+    setShowContact(false)
+    setShowServices(false)
+  }
+
   console.log(showContact)
 
   return (
@@ -38,7 +44,7 @@ export default function Menu() {
       </ul>
       <ul className={`${styles.cases} ${ showCases ? `${styles.show}` : `${styles.hide}` } `}>
         { cases.map(({ title }, i) => (
-          <li className={styles.case} key={i}>
+          <li className={styles.case} key={i} onClick={setAll}>
             <Link href='/'>
               <a className={styles.a}>
                 {title}
@@ -53,7 +59,7 @@ export default function Menu() {
       </ul>
       <ul className={`${styles.services} ${ showServices ? `${styles.show}` : `${styles.hide}` } `}>
         { services.map(({ service, url }, i) => (
-          <li className={styles.service} key={i}>
+          <li className={styles.service} key={i} onClick={setAll}>
             <Link href={url}>
               <a className={styles.a}>
                 {service}
@@ -66,14 +72,14 @@ export default function Menu() {
         </li>
       </ul>
       <ul className={`${styles.contact} ${ showContact ? `${styles.show}` : `${styles.hide}` } `}>
-        <li className={styles.li}>
+        <li className={styles.li} onClick={setAll}>
           <Link href='mailto:hejsa@growup.studio'>
             <a>
               hejsa@growup.studio
             </a>
           </Link>
         </li>
-        <li className={styles.li}>
+        <li className={styles.li} onClick={setAll}>
           <Link href='tel:+4531623733'>
             <a>
               +45 31 62 37 33

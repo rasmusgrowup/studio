@@ -1,7 +1,7 @@
 @import 'core.scss';
 
 .header {
-  margin-inline: auto;
+  margin: 0 auto;
   width: calc(100% - 4rem);
 
   @media (max-width: $m) {
@@ -57,7 +57,7 @@
 .about,
 .services,
 .clients {
-  margin-inline: auto;
+  margin: 0 auto;
   margin-top: 6rem;
   width: calc(100% - 4rem);
 

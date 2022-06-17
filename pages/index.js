@@ -24,7 +24,8 @@ const titelWords = [
 const howFirst = [
   'Jeres',
   'billeder,',
-  'videoer',
+  'videoer,',
+  'budskaber',
   'og',
   'visuelle',
   'identitet',
@@ -34,19 +35,48 @@ const howFirst = [
   'samme',
   'team,',
   'der',
-  'lever',
+  'leverer',
   'den',
   'tekniske',
-  'løsning.'
+  'løsning'
 ];
 
 const howSecond = [
-  'Det',
-  'gør',
+  'I',
+  'får',
+  'altså',
+  'et',
+  'værktøj,',
+  'der',
+  'understøtter',
   'jeres',
-  'produkt',
-  'helt',
-  'unikt.'
+  'forretning,',
+  'på',
+  'bedste',
+  'vis'
+];
+
+const howThird = [
+  'Og',
+  'da',
+  'vi',
+  'er',
+  'et',
+  'lille',
+  'team,',
+  'bliver',
+  'der',
+  'plads',
+  'til',
+  'fordybelse,',
+  'personlig',
+  'betjening',
+  'og',
+  'kreativitet,',
+  'i',
+  'hvert',
+  'eneste',
+  'projekt'
 ];
 
 function Titel() {
@@ -146,7 +176,7 @@ export default function Home() {
           Om os
         </h2>
         <p className={styles.p}>
-          Vi er et <b>nærværende</b> designteam fra Odense C. Vi har <b>4 års</b> erfaring i at levere smukke hjemmesider og visuelt design, <b>skræddersyet</b> til kunden.
+          Vi er et lille, <b>nærværende</b> designteam fra Odense C. Vi har <b>4 års</b> erfaring i at levere smukke hjemmesider og visuelt design, <b>skræddersyet</b> til kunden.
         </p>
         <p className={styles.p}>
           Vi hjælper jer fra idé til færdigt <b>produkt.</b>
@@ -196,7 +226,7 @@ export default function Home() {
           viewport={how}
           variants={variants}
         className={styles.h2}>
-          Skræddersyede løsninger
+          Vælg et lille team
         </motion.h2>
           <div>
             { howFirst.map((word, i) => (
@@ -211,8 +241,23 @@ export default function Home() {
               </motion.h2>
             )) }
           </div>
-          <div className={styles.wordContainer}>
+          <div
+            className={styles.wordContainer}>
             { howSecond.map((word, i) => (
+              <motion.h2
+                key={i}
+                className={styles.wordWrapper}>
+                <motion.span
+                  variants={items}
+                  className={styles.wordSpan}>
+                  {word}
+                </motion.span>
+              </motion.h2>
+            )) }
+          </div>
+          <div
+            className={styles.wordContainer}>
+            { howThird.map((word, i) => (
               <motion.h2
                 key={i}
                 className={styles.wordWrapper}>

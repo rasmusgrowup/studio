@@ -23,13 +23,17 @@
 
 .wordWrapper {
   display: inline-block;
-  line-height: 0.8;
+  line-height: 1;
   margin-right: 0.2em;
   overflow: hidden;
 
   .wordSpan {
     display: block;
   }
+}
+
+.wordContainer {
+  margin-top: 3em;
 }
 
 .mail {
@@ -56,6 +60,7 @@
 
 .about,
 .services,
+.how,
 .clients {
   margin: 0 auto;
   margin-top: 6rem;
@@ -63,6 +68,28 @@
 
   @media (max-width: $m) {
     width: calc(100% - 2rem);
+  }
+}
+
+.how {
+  margin: 12rem auto;
+  max-width: $l;
+}
+
+.how .wordWrapper {
+  font-size: max(4.5vw, 2.2rem);
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 75vw;
+
+  @media (max-width: $m) {
+    line-height: 1.25;
+    max-width: 100%;
+  }
+
+  &:last-of-type {
+    font-weight: bold;
   }
 }
 
@@ -161,4 +188,8 @@
     font-size: 1rem;
     margin-left: 0.25rem;
   }
+}
+
+.tagline {
+  //text-transform: capitalize;
 }

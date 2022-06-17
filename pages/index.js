@@ -14,10 +14,39 @@ const titelWords = [
   'designstudie.',
   'Vi',
   'tilbyder',
-  'react',
+  'React,',
+  'Next.js',
   '&',
-  'shopify',
+  'Shopify',
   'løsninger'
+];
+
+const howFirst = [
+  'Jeres',
+  'billeder,',
+  'videoer',
+  'og',
+  'visuelle',
+  'identitet',
+  'leveres',
+  'af',
+  'det',
+  'samme',
+  'team,',
+  'der',
+  'lever',
+  'den',
+  'tekniske',
+  'løsning.'
+];
+
+const howSecond = [
+  'Det',
+  'gør',
+  'jeres',
+  'produkt',
+  'helt',
+  'unikt.'
 ];
 
 function Titel() {
@@ -28,7 +57,7 @@ function Titel() {
           key={i}
           className={styles.wordWrapper}>
           <motion.span
-            initial={{ y: 60 }}
+            initial={{ y: '1em' }}
             animate={{ y: 0}}
             transition={{
               duration: 2,
@@ -51,7 +80,8 @@ export default function Home() {
       y: 0,
       transition: {
         duration: 2,
-        ease: [0.22, 1, 0.36, 1]
+        ease: [0.22, 1, 0.36, 1],
+        staggerChildren: 0.05,
       },
     },
     hidden: {
@@ -63,6 +93,19 @@ export default function Home() {
   const how = {
     margin: '0 0 -80px 0',
     once: true,
+  }
+
+  const items = {
+    hidden: {
+      y: '1.5em'
+    },
+    visible: {
+      y: 0,
+      transition: {
+        duration: 2,
+        ease: [0.22, 1, 0.36, 1]
+      }
+    }
   }
 
   console.log(titelWords)
@@ -78,7 +121,8 @@ export default function Home() {
         transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
         animate={{ opacity: 1, y: 0 }}
         className={styles.tagline}>
-          Visuelt design m. kommunikation & <br/>brugeren i centrum
+          Vi leverer SEO-optimerede hjemmesider og netbutikker<br/>
+          — pakket ind i jeres unikke visuelle identitet.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -102,7 +146,7 @@ export default function Home() {
           Om os
         </h2>
         <p className={styles.p}>
-          Vi er et <b>nærværende</b> design team fra Odense C. Vi har <b>4 års</b> erfaring i at levere smukke hjemmesider og visuelt design, <b>skræddersyet</b> til kunden.
+          Vi er et <b>nærværende</b> designteam fra Odense C. Vi har <b>4 års</b> erfaring i at levere smukke hjemmesider og visuelt design, <b>skræddersyet</b> til kunden.
         </p>
         <p className={styles.p}>
           Vi hjælper jer fra idé til færdigt <b>produkt.</b>
@@ -140,6 +184,47 @@ export default function Home() {
           ))}
         </ul>
       </section>
+      <motion.section
+        initial='hidden'
+        whileInView='visible'
+        viewport={how}
+        variants={variants}
+        className={styles.how}>
+        <motion.h2
+          initial='hidden'
+          whileInView='visible'
+          viewport={how}
+          variants={variants}
+        className={styles.h2}>
+          Skræddersyede løsninger
+        </motion.h2>
+          <div>
+            { howFirst.map((word, i) => (
+              <motion.h2
+                key={i}
+                className={styles.wordWrapper}>
+                <motion.span
+                  variants={items}
+                  className={styles.wordSpan}>
+                  {word}
+                </motion.span>
+              </motion.h2>
+            )) }
+          </div>
+          <div className={styles.wordContainer}>
+            { howSecond.map((word, i) => (
+              <motion.h2
+                key={i}
+                className={styles.wordWrapper}>
+                <motion.span
+                  variants={items}
+                  className={styles.wordSpan}>
+                  {word}
+                </motion.span>
+              </motion.h2>
+            )) }
+          </div>
+      </motion.section>
       <section className={styles.clients}>
         <motion.h2
           initial='hidden'

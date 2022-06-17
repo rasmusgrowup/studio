@@ -4,19 +4,15 @@ const services = [
     url: '/art-direction'
   },
   {
-    service: 'Branding',
-    url: '/branding'
-  },
-  {
     service: 'Identitetsdesign',
     url: '/identitetsdesign'
   },
   {
-    service: 'React udvikling',
+    service: 'React & Next.js',
     url: '/react-udvikling'
   },
   {
-    service: 'Shopify-løsninger',
+    service: 'Shopify',
     url: '/shopify'
   }
 ]

@@ -2,7 +2,7 @@ const cases = [
   {
     image: '/tinekhome.png',
     title: 'Tinekhome',
-    assignments: 'Visuelt redesign @ tinekhome.com',
+    assignments: 'Visuelt redesign af tinekhome.com',
     status: 'Løbende samarbejde',
     url: '/'
   },

@@ -2,21 +2,17 @@
 
 .header {
   margin: 0 auto;
-  width: calc(100% - 4rem);
-
-  @media (max-width: $m) {
-    width: calc(100% - 2rem);
-  }
+  width: 100%;
 }
 
 .h1 {
-  font-size: max(5vw, 2.2rem);
+  font-size: max(5vw, 2.4rem);
   line-height: 1;
   margin: 0;
   max-width: 75vw;
 
   @media (max-width: $m) {
-    line-height: 1.25;
+    line-height: 0.8;
     max-width: 100%;
   }
 }
@@ -64,11 +60,7 @@
 .clients {
   margin: 0 auto;
   margin-top: 6rem;
-  width: calc(100% - 4rem);
-
-  @media (max-width: $m) {
-    width: calc(100% - 2rem);
-  }
+  width: 100%;
 }
 
 .how {
@@ -195,5 +187,34 @@
 }
 
 .tagline {
-  //text-transform: capitalize;
+  margin-top: 2rem;
+  max-width: 450px;
+  text-transform: none;
+}
+
+// Case styling
+.intro {
+  margin-top: 2rem;
+}
+
+.description .list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  .link {
+    margin-top: 0.5em;
+  }
+}
+
+.resume {
+  margin-top: 4rem;
+  max-width: 500px;
+}
+
+.resume p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: none;
 }

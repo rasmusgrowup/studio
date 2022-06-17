@@ -4,7 +4,7 @@ const cases = [
     title: 'Tinekhome',
     assignments: 'Visuelt redesign af tinekhome.com',
     status: 'Løbende samarbejde',
-    url: '/'
+    url: '/tinekhome'
   },
   {
     image: '/karensbord.png',
@@ -22,7 +22,7 @@ const cases = [
   },
   {
     image: '/organic-crave.png',
-    title: 'The Organic Crave Company',
+    title: 'The Organic Crave',
     assignments: 'Art Direction & Shopify-løsning',
     status: 'Afsluttet',
     url: '/'

@@ -4,11 +4,7 @@
   margin: 0 auto;
   margin-top: 3rem;
   position: relative;
-  width: calc(100vw - 4rem);
-
-  @media (max-width: $m) {
-    width: calc(100vw - 2rem);
-  }
+  width: 100%;
 }
 
 .inner {

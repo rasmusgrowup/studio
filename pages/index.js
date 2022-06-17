@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from "next/link"
 import styles from '../styles/styles.module.scss'
 
+import Title from '../components/Title'
+
 import Cases from '../components/Cases'
 import data from '../utils/references.js'
 import services from '../utils/services.js'
@@ -79,29 +81,6 @@ const howThird = [
   'projekt'
 ];
 
-function Titel() {
-  return (
-    <>
-      { titelWords.map((word, i) => (
-        <motion.div
-          key={i}
-          className={styles.wordWrapper}>
-          <motion.span
-            initial={{ y: '1em' }}
-            animate={{ y: 0}}
-            transition={{
-              duration: 2,
-              delay: 0.15 + (i / 10),
-              ease: [0.22, 1, 0.36, 1]
-            }}
-            className={styles.wordSpan}>
-            {word}
-          </motion.span>
-        </motion.div>
-      ))}
-    </>
-  )
-}
 
 export default function Home() {
   const variants = {
@@ -121,7 +100,7 @@ export default function Home() {
   }
 
   const how = {
-    margin: '0 0 -80px 0',
+    margin: '0 0 -120px 0',
     once: true,
   }
 
@@ -138,21 +117,20 @@ export default function Home() {
     }
   }
 
-  console.log(titelWords)
   return (
     <>
       <section
       className={styles.header}>
         <h1 className={styles.h1}>
-          <Titel />
+          <Title arr={titelWords} />
         </h1>
         <motion.p
         initial={{ opacity: 0, y: 30 }}
         transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
         animate={{ opacity: 1, y: 0 }}
         className={styles.tagline}>
-          Vi leverer SEO-optimerede hjemmesider og netbutikker<br/>
-          — pakket ind i jeres unikke visuelle identitet.
+          Vi leverer SEO-optimerede hjemmesider og netbutikker
+          — respektfuldt pakket ind i jeres visuelle identitet.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

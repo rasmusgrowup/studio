@@ -9,8 +9,6 @@ export default function Nav() {
   const [ menu, setMenu ] = useState(true);
   const { toggle, toggleFunction } = useContext(MenuContext);
 
-  console.log(toggle)
-
   return (
     <>
       <div className={styles.button} onClick={toggleFunction}>
@@ -21,7 +19,7 @@ export default function Nav() {
           <ul className={styles.cases}>
             <li className={styles.overskrift}>Case-historier</li>
             { cases.map(( { title, url }, i ) => (
-              <li className={styles.li} key={i}>
+              <li className={styles.li} key={i} onClick={toggleFunction}>
                 <Link href={url}>
                   <a>
                     {title}

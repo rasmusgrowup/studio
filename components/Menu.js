@@ -43,9 +43,9 @@ export default function Menu() {
         </li>
       </ul>
       <ul className={`${styles.cases} ${ showCases ? `${styles.show}` : `${styles.hide}` } `}>
-        { cases.map(({ title }, i) => (
+        { cases.map(({ title, url }, i) => (
           <li className={styles.case} key={i} onClick={setAll}>
-            <Link href='/'>
+            <Link href={url}>
               <a className={styles.a}>
                 {title}
                 <span className={styles.number}>0{i + 1}</span>

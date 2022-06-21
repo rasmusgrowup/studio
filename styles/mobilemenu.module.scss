@@ -11,7 +11,7 @@
 }
 
 .drawer {
-  background-color: var(--black);
+  background-color: var(--accent);
   display: block;
   height: 100vh;
   position: fixed;
@@ -22,19 +22,6 @@
   width: 100%;
   z-index: 1;
 }
-
-/* .drawer::after {
-  content: "";
-  background-image: url('/noisy.png');
-  opacity: 0.25;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-} */
 
 .open {
   display: block;
@@ -104,7 +91,7 @@
 }
 
 .link::before {
-  background-color: var(--accent);
+  background-color: var(--light);
   content: '';
   display: inline-block;
   border-radius: 4px;
@@ -140,7 +127,7 @@
 
 .mail,
 .tel {
-  color: var(--accent);
+  color: var(--light);
   display: block;
   font-size: 1.6rem;
 }

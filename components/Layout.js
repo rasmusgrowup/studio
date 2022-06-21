@@ -1,14 +1,15 @@
-import styles from '../styles/layout.module.scss'
-import Link from "next/link"
-import Header from './Header'
+import styles from '../styles/layout.module.scss';
+import Link from "next/link";
+import Header from './Header';
 import { motion } from 'framer-motion';
 
 export default function Layout({ children }) {
-
   return (
     <>
       <Header />
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        {children}
+      </main>
       <motion.footer
       initial={{ opacity: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}

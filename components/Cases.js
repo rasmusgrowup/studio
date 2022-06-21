@@ -18,9 +18,9 @@ export default function Cases() {
             status,
             url}, i) => (
             <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 1, delay: (2.65 + (i / 10)), ease: "easeOut" }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 30 }}
+            transition={{ duration: 1, delay: (3 + (i / 10)), ease: "easeOut" }}
+            animate={{ opacity: 1, x: 0 }}
             className={styles.case}
             key={i}>
               <Image
@@ -37,13 +37,6 @@ export default function Cases() {
                 <p>{title}</p>
                 <p>{assignments}</p>
                 <p>{status}</p>
-                <Link href={url}>
-                  <a
-                    className={styles.url}
-                    target='_blank'>
-                    <p>www</p>
-                  </a>
-                </Link>
               </div>
             </motion.div>
           ))}

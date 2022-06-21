@@ -13,17 +13,18 @@ export default function Cursor() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
-  const springConfig = { damping: 35, stiffness: 200 };
+  const springConfig = { damping: 75, stiffness: 100 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
   const variants = {
     default: {
-      backgroundColor: 'blue',
-      height: 150,
-      width: 150,
-      borderRadius: '75px',
-      mixBlendMode: 'lighten',
+      background: 'rgb(255,69,0)',
+      background: 'radial-gradient(circle, rgba(255,69,0,0.15) 0%, rgba(255,69,0,0) 66%)',
+      height: 2000,
+      width: 2000,
+      borderRadius: '1000px',
+      zIndex: '0',
     }
   };
 

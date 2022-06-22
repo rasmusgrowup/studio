@@ -39,7 +39,7 @@ export default function Menu() {
             Services
         </li>
         <li className={styles.li} onClick={toggleContact}>
-            Kontakt
+            Om os
         </li>
       </ul>
       <ul className={`${styles.cases} ${ showCases ? `${styles.show}` : `${styles.hide}` } `}>

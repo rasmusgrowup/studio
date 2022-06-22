@@ -149,7 +149,7 @@ export default function Home() {
         whileInView='visible'
         viewport={how}
         variants={variants}
-      className={styles.about}>
+        className={styles.about}>
         <h2 className={styles.h2}>
           Om os
         </h2>

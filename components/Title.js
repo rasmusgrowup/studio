@@ -9,7 +9,7 @@ export default function Title({ arr }) {
           key={i}
           className={styles.wordWrapper}>
           <motion.span
-            initial={{ y: '1em' }}
+            initial={{ y: '1.1em' }}
             animate={{ y: 0}}
             transition={{
               duration: 2,

@@ -4,28 +4,32 @@ const cases = [
     title: 'Tinekhome',
     assignments: 'Visuelt redesign af tinekhome.com',
     status: 'Løbende samarbejde',
-    url: '/tinekhome'
+    url: '/tinekhome',
+    periode: '2019-2022'
   },
   {
     image: '/karensbord.png',
     title: 'Karens Bord',
     assignments: 'Skabelon Shopify-løsning',
     status: 'Løbende samarbejde',
-    url: '/'
+    url: '/',
+    periode: '2020-2022'
   },
   {
     image: '/twelveinch.png',
     title: 'Twelve Inch',
     assignments: 'Art Direction & Shopify-løsning',
     status: 'Løbende samarbejde',
-    url: '/'
+    url: '/',
+    periode: '2018-2022'
   },
   {
     image: '/organic-crave.png',
     title: 'The Organic Crave',
     assignments: 'Art Direction & Shopify-løsning',
     status: 'Afsluttet',
-    url: '/'
+    url: '/',
+    periode: '2020'
   }
 ];
 export default cases

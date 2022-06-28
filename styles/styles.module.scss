@@ -6,7 +6,7 @@
 }
 
 .h1 {
-  font-size: max(5vw, 2.4rem);
+  font-size: max(5vw, 1.8rem);
   line-height: 1;
   margin: 0;
   max-width: 75vw;
@@ -64,7 +64,9 @@
 .clients {
   margin: 0 auto;
   margin-top: 6rem;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .how {
@@ -78,7 +80,7 @@
 }
 
 .how .wordWrapper {
-  font-size: max(3.2vw, 1.6rem);
+  font-size: max(3.2vw, 1.8rem);
   line-height: 1.1;
   margin-bottom: 0;
   margin-top: 0;
@@ -287,5 +289,64 @@
 
   @media (max-width: $m) {
     font-size: 1.2em;
+  }
+}
+
+// WaterFall styling
+
+.waterFall {
+  margin: 0 auto;
+  width: 100%;
+
+  .inner {
+    display: block;
+    margin: 0 auto;
+    max-width: $l;
+    width: 100%;
+
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+  }
+
+  .drop {
+    display: block;
+    margin-top: 12vw;
+
+    @media (max-width: $m) {
+      max-width: 100% !important;
+    }
+  }
+
+  .drop:nth-of-type(even) {
+    margin-top: 16vw;
+  }
+
+  .drop:first-of-type {
+    margin-top: 0;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+  }
+
+  p {
+    display: block;
+    font-size: 0.9em;
+    text-align: left;
+    text-transform: none;
+    max-width: 275px;
+    width: 100%;
+  }
+
+  .drop[data='left'] {
+    float: left;
+  }
+
+  .drop[data='right'] {
+    float: right;
   }
 }

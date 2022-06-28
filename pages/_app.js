@@ -6,11 +6,9 @@ import MouseContextProvider from "../lib/MouseContext";
 function MyApp({ Component, pageProps }) {
   return (
     <MenuProvider>
-      <MouseContextProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </MouseContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </MenuProvider>
   )
 }

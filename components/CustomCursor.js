@@ -19,11 +19,12 @@ export default function Cursor() {
 
   const variants = {
     default: {
-      background: 'rgb(255,69,0)',
-      background: 'radial-gradient(circle, rgba(255,69,0,0.15) 0%, rgba(255,69,0,0) 66%)',
-      height: 2000,
-      width: 2000,
-      borderRadius: '1000px',
+      background: 'rgb(255, 201, 98)',
+      background: 'radial-gradient(circle, rgba(255, 201, 98, 0.5) 0%, rgba(255, 201, 98, 0) 66%)',
+      height: 1600,
+      width: 1600,
+      mixBlendMode: 'multiply',
+      borderRadius: '800px',
       zIndex: '0',
     }
   };

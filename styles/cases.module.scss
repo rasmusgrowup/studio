@@ -12,7 +12,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.4rem;
-  pointer-events: none;
   width: 100%;
 
   @media (max-width: $m) {
@@ -26,6 +25,10 @@
     .case {
       margin-bottom: 2rem;
     }
+  }
+
+  .case {
+    pointer-events: none;
   }
 
   .case p {

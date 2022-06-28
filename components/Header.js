@@ -20,7 +20,7 @@ export default function Header() {
         `}>
         <div className={styles.inner}>
           <Link href='/'>
-            <a className={styles.logo}>Growup.studio</a>
+            <a className={styles.logo}>Growup studio</a>
           </Link>
           <Nav />
         </div>

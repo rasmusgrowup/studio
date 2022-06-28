@@ -16,13 +16,13 @@ export default function Cases() {
             assignments,
             status,
             url}, i) => (
-            <Link href={url} passHref><a>
+            <Link href={url} passHref key={i}><a>
               <motion.div
               initial={{ opacity: 0, x: 30 }}
               transition={{ duration: 1, delay: (3 + (i / 10)), ease: "easeOut" }}
               animate={{ opacity: 1, x: 0 }}
               className={styles.case}
-              key={i}>
+              >
                 <Image
                   src={image}
                   layout='responsive'

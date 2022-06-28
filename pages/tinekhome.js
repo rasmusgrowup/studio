@@ -239,7 +239,7 @@ export default function Tinekhome() {
             data='left' style={{ maxWidth: '600px'}}>
             <Image src={Webshot3} />
             <p>
-              Efter at vi har redesignet checkout-flowet, er Tinekhome's omsætning steget markant
+              Efter at vi har redesignet checkout-flowet, er Tinekhomes omsætning steget markant
             </p>
           </motion.div>
           <motion.div

@@ -4,71 +4,70 @@ import Image from "next/image"
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
 import cases from '../utils/cases.js'
-import Hero from '../public/tinekhome_hero.jpg'
-import Webshot from '../public/tinekhome/tinekhome_webshot_2.jpg'
-import Webshot2 from '../public/tinekhome/tinekhome_checkout.jpg'
-import Webshot3 from '../public/tinekhome/tinekhome_checkout_2.jpg'
-import Mobileshot from '../public/tinekhome/tinekhome_Mobileshot.jpg'
+
+import Hero from '../public/karensbord/hero.jpg'
+import Webshot from '../public/organic/organic_webshot.jpg'
+import Studie from '../public/organic/organic_studie_2.jpg'
+import Bagom from '../public/organic/organic_bagom.jpg'
+import Mobileshot from '../public/organic/organic_mobileshot.jpg'
+import Insta from '../public/organic/organic_instashot_2.jpg'
+import Havnen from '../public/organic/organic_havnen.jpg'
 
 import { motion } from 'framer-motion'
 
 const titelWords = [
-  'I',
-  '2019',
-  'hjalp',
-  'vi',
-  'tine k home',
-  'med',
-  'at',
-  'give',
-  'deres',
-  'webshop',
-  'en',
-  'visuel',
-  'og',
-  'funktionel',
-  'make-over'
+  'Vi ',
+  'leverede ',
+  'en ',
+  'skræddersyet ',
+  'Shopify-',
+  'løsning ',
+  'til ',
+  'den ',
+  'fynske ',
+  'start-up ',
+  'the ',
+  'Organic ',
+  'Crave ',
+  'Company.'
 ];
 
 const howFirst = [
-  'Vores ',
-  'målsætning ',
-  'var ',
-  'at ',
-  'forbedre ',
-  'brugerens ',
-  'købsoplevelse, ',
-  'samt ',
-  'at ',
-  'give ',
-  'det ',
-  'visuelle ',
+  'Vi ',
+  'definerede ',
+  'hele ',
+  'the ',
+  'Organic ',
+  'Craves ',
+  'online ',
   'univers ',
-  'et ',
-  'ansigtsløft.'
+  '— ',
+  'og ',
+  'producerede ',
+  'billeder, ',
+  'video ',
+  'og ',
+  'tekster ',
+  'hertil.'
 ];
 
 const howSecond = [
-  'Vores ',
-  'redesign ',
-  'har ',
-  'været ',
+  'Vi ',
+  'supporterede ',
+  'desuden ',
+  'lanceringen ',
+  'af ',
+  'produkterne ',
   'med ',
-  'til ',
-  'at ',
-  'forbedre ',
-  'kundernes ',
-  'generelle ',
-  'tilfredshed ',
-  'på ',
-  'tinekhome.com ',
-  '— ',
+  'stories, ',
+  'reels ',
   'og ',
-  'dermed ',
-  'også ',
-  'at ',
-  'øge ',
-  'omsætningen.'
+  'opslag ',
+  'på ',
+  'deres ',
+  'Instagram ',
+  'og ',
+  'TikTok.'
 ];
 
 export default function Tinekhome() {
@@ -121,7 +120,7 @@ export default function Tinekhome() {
           className={styles.description}>
           <ul className={styles.list}>
             <li className={styles.assignments}>
-              Tine K Home kom til os, fordi de var kede af, at deres online univers ikke reflekterede kvaliteten i deres produkter. De var desuden klar over, at der flere steder på hjemmesiden var problemer med brugeroplevelsen, pga. manglende responsivt design.
+              The Organic Crave kom til os for at få hjælp til at vælge den rigtige ecommerce-platform. Den skulle være skalerbar, nem at vedligeholde og have gode integrationsmuligheder. Shopify var den naturlige løsning.
             </li>
           </ul>
         </motion.div>
@@ -132,7 +131,16 @@ export default function Tinekhome() {
           transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
           animate={{ opacity: 1, y: 0 }}
           className={styles.heroImage}>
-          <Image src={Hero} layout='responsive' quality='100'/>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            width='100%'
+            style={{ objectFit: 'cover' }}
+            >
+            <source src={'/organic/Hero2.mp4'} type='video/mp4' />
+          </video>
         </motion.div>
         <motion.ul
           initial={{ opacity: 0, y: 30 }}
@@ -141,15 +149,15 @@ export default function Tinekhome() {
           viewport={how}
           className={styles.heroList}>
           <li className={styles.link}>
-            <Link href='https://tinekhome.com'>
+            <Link href='https://theorganiccrave.com'>
               <a target='_blank'>Besøg siden</a>
             </Link>
           </li>
           <li className={styles.kunde}>
-            Kunde: {cases[0].title}
+            Kunde: {cases[3].title}
           </li>
           <li className={styles.periode}>
-            Periode: {cases[0].periode}
+            Periode: {cases[3].periode}
           </li>
         </motion.ul>
       </div>
@@ -159,8 +167,9 @@ export default function Tinekhome() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={how}
         className={styles.resume}>
-        <p>Siden 2019 har Growup løbende supporteret designvirksomheden Tine K Home med visuelle og funktionelle forbedringer på deres webshop. Fra vedligehold af forsiden ved lancering af nye kollektioner, til et fuldt redesign af checkout og produktside med fokus på brugervenlighed og responsivt design.<br /><br />
-          Yderligere har Growup i fællesskab med et fotostudie tilrettelagt og udarbejdet videomateriale af populære produktserier for at understøtte oplevelsen af Tine K Home’s designunivers. Det har ført til vækst for online salget.
+        <p>
+        Som ny spiller på et trængt markede, lancerede The Organic Crave Company deres serie af sunde snacks i foråret 2020. Hertil leverede vi en skræddersyet Shopify-webshop som både havde til rolle at være en salgskanal og et visitkort til alle interesserede. Webshoppen skulle fortælle om The Organic Crave’s stærke ambitioner om at revolutionere snack-industrien gennem miljø-rigtige ingredienser og produktion.<br /><br />
+        I forbindelse med lanceringen af webshoppen producerede og tilrettelagde Growup en serie af billeder, som skulle give den rigtige stemning omkring de nye produkter. Det skulle være moderne, ungt og friskt, og passe til den visuelle identitet som The Organic Crave har.
         </p>
       </motion.div>
       <motion.section
@@ -216,7 +225,7 @@ export default function Tinekhome() {
             data='left' style={{ maxWidth: '640px'}}>
             <Image src={Webshot} />
             <p>
-              Vi har siden 2019 stået for at opdatere forsiden på tinekhome.com, for at supportere deres udsalg eller lancering af nye kollektioner
+              Sådan så theorganiccrave.com ud på lanceringsdagen. De billeder, vi har hjulpet med at producere, danner hele online universet.
             </p>
           </motion.div>
           <motion.div
@@ -226,9 +235,9 @@ export default function Tinekhome() {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '440px'}}>
-            <Image src={Webshot2} />
+            <Image src={Bagom} />
             <p>
-              Kunderne blev tabt ved checkout, der var besværlig at komme igennem, forvirrende at bruge og manglede responsivt design
+              Vi hjalp til på fotodagen, hvor vi arbejdede systematisk efter en drejebog. Vi fandt frem til en egnet håndmodel og sørgede for at style hende, med tøj i matchende farver til produkter.
             </p>
           </motion.div>
           <motion.div
@@ -237,31 +246,7 @@ export default function Tinekhome() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Webshot3} />
-            <p>
-              Efter at vi har redesignet checkout-flowet, er Tinekhomes omsætning steget markant
-            </p>
-          </motion.div>
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={how}
-            variants={variants}
-            className={styles.drop}
-            data='right' style={{ maxWidth: '340px'}}>
-            <Image src={Mobileshot} />
-            <p>
-              Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
-            </p>
-          </motion.div>
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={how}
-            variants={variants}
-            className={styles.drop}
-            data='left' style={{ maxWidth: '620px'}}>
+            data='left' style={{ maxWidth: '440px'}}>
             <video
               autoPlay
               muted
@@ -269,10 +254,10 @@ export default function Tinekhome() {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/tinekhome/Sofa.mp4'} type='video/mp4' />
+              <source src={'/organic/organic_video.mp4'} type='video/mp4' />
             </video>
             <p>
-              Foruden webudvikling, har vi hjulpet Tinekhome med at finde frem til en videostil, til deres produktvideoer
+              Vi hjalp også med at organisere et videoshoot på Odense havn. Vi stog igen for at hyre en dygtig model og instruere hende, så vi fik de rigtige videoer.
             </p>
           </motion.div>
           <motion.div
@@ -281,18 +266,10 @@ export default function Tinekhome() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '320px'}}>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={{ objectFit: 'cover' }}
-              >
-              <source src={'/tinekhome/Plaid.mp4'} type='video/mp4' />
-            </video>
+            data='right' style={{ maxWidth: '480px'}}>
+            <Image src={Havnen} />
             <p>
-              Vi har både eksperimenteret med abstrakte videoer, som videoen med plaidet her, og stylede stuemiljøer, som ovenfor
+              Her ses vi instruere modellen. Vi kigger over skulderen på fotografen, for at sørge for, at video-klippene fra havnen, passer sammen med billederne fra studiet.
             </p>
           </motion.div>
           <motion.div
@@ -301,7 +278,31 @@ export default function Tinekhome() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '400px'}}>
+            data='left' style={{ maxWidth: '500px'}}>
+            <Image src={Studie} />
+            <p>
+              Her ses håndmodellen med matchene skjorte.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='right' style={{ maxWidth: '300px'}}>
+            <Image src={Insta} />
+            <p>
+              Henover sommeren 2020 stod for at poste og promovere The Organic Craves produkter på Instagram og TikTok.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='left' style={{ maxWidth: '576px'}}>
             <video
               autoPlay
               muted
@@ -309,10 +310,10 @@ export default function Tinekhome() {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/tinekhome/Stol.mp4'} type='video/mp4' />
+              <source src={'/organic/organic_video_2.mp4'} type='video/mp4' />
             </video>
             <p>
-              Produktvideoerne er blevet brugt til markedsføring på tinekhomes SoMe-kanaler med stor success
+              Videoklippene kunne desuden bruges på sociale medier også.
             </p>
           </motion.div>
         </div>

@@ -8,11 +8,11 @@ const cases = [
     periode: '2019-2022'
   },
   {
-    image: '/karensbord.png',
+    image: '/Karensbord.jpg',
     title: 'Karens Bord',
     assignments: 'Skabelon Shopify-løsning',
     status: 'Løbende samarbejde',
-    url: '/',
+    url: '/karensbord',
     periode: '2020-2022'
   },
   {
@@ -20,7 +20,7 @@ const cases = [
     title: 'Twelve Inch',
     assignments: 'Art Direction & Shopify-løsning',
     status: 'Løbende samarbejde',
-    url: '/',
+    url: '/twelveinch',
     periode: '2018-2022'
   },
   {
@@ -28,7 +28,7 @@ const cases = [
     title: 'The Organic Crave',
     assignments: 'Art Direction & Shopify-løsning',
     status: 'Afsluttet',
-    url: '/',
+    url: '/organiccrave',
     periode: '2020'
   }
 ];

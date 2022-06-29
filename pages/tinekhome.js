@@ -8,6 +8,7 @@ import Hero from '../public/tinekhome_hero.jpg'
 import Webshot from '../public/tinekhome/tinekhome_webshot_2.jpg'
 import Webshot2 from '../public/tinekhome/tinekhome_checkout.jpg'
 import Webshot3 from '../public/tinekhome/tinekhome_checkout_2.jpg'
+import Mobileshot from '../public/tinekhome/tinekhome_Mobileshot.jpg'
 
 import { motion } from 'framer-motion'
 
@@ -249,6 +250,18 @@ export default function Tinekhome() {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '340px'}}>
+            <Image src={Mobileshot} />
+            <p>
+              Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skrærmstørrelser og moderne browsere.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='left' style={{ maxWidth: '620px'}}>
             <video
               autoPlay
               muted
@@ -256,7 +269,7 @@ export default function Tinekhome() {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/tinekhome/Plaid.mp4'} type='video/mp4' />
+              <source src={'/tinekhome/Sofa.mp4'} type='video/mp4' />
             </video>
             <p>
               Foruden webudvikling, har vi hjulpet Tinekhome med at finde frem til en videostil, til deres produktvideoer
@@ -268,7 +281,7 @@ export default function Tinekhome() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '720px'}}>
+            data='right' style={{ maxWidth: '320px'}}>
             <video
               autoPlay
               muted
@@ -276,10 +289,10 @@ export default function Tinekhome() {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/tinekhome/Sofa.mp4'} type='video/mp4' />
+              <source src={'/tinekhome/Plaid.mp4'} type='video/mp4' />
             </video>
             <p>
-              Vi har både eksperimenteret med abstrakte videoer, som videoen med plaidet ovenfor, og stylede stuemiljøer, som her
+              Vi har både eksperimenteret med abstrakte videoer, som videoen med plaidet her, og stylede stuemiljøer, som ovenfor
             </p>
           </motion.div>
           <motion.div
@@ -288,7 +301,7 @@ export default function Tinekhome() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '300px'}}>
+            data='left' style={{ maxWidth: '400px'}}>
             <video
               autoPlay
               muted
@@ -296,10 +309,10 @@ export default function Tinekhome() {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/tinekhome/Kugler.mp4'} type='video/mp4' />
+              <source src={'/tinekhome/Stol.mp4'} type='video/mp4' />
             </video>
             <p>
-              Og så kunne vi ikke stå for at få søde Bella med i en video
+              Produktvideoerne er blevet brugt til markedsføring på tinekhomes SoMe-kanaler med stor success
             </p>
           </motion.div>
         </div>

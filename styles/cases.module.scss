@@ -6,6 +6,7 @@
   position: relative;
   width: 100%;
   z-index: 1;
+  text-align: center;
 }
 
 .inner {
@@ -45,8 +46,20 @@
     }
   }
 
+  .imageWrapper,
+  .videoWrapper {
+    border-radius: 50%;
+    height: 26vw;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: $m) {
+      height: 110vw;
+    }
+  }
+
   .info {
-    margin-top: 0.75rem;
+    margin-top: 1em;
     position: relative;
     text-transform: uppercase;
   }

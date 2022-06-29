@@ -12,7 +12,7 @@
 .main {
   padding: 0 2rem;
   padding-bottom: max(2vw, 1.5rem);
-  padding-top: max(8vw, 6rem);
+  padding-top: max(6vw, 6rem);
   position: relative;
 
   @media (max-width: $m) {
@@ -20,25 +20,4 @@
     padding-bottom: max(2vw, 1.5rem);
     padding-top: max(6vw, 6rem);
   }
-}
-
-.footer {
-  color: var(--accent);
-  padding-bottom: max(3vw, 3rem);
-  padding-left: 2rem;
-  padding-top: 2rem;
-  position: relative;
-
-  @media (max-width: $m) {
-    padding-left: 1rem;
-  }
-}
-
-.contact {
-  margin-bottom: 2rem;
-}
-
-.contact a {
-  display: block;
-  font-size: max(2vw, 1.5rem);
 }

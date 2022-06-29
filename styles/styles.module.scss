@@ -6,7 +6,7 @@
 }
 
 .h1 {
-  font-size: max(5vw, 1.8rem);
+  font-size: max(4.25vw, 2.2rem);
   line-height: 1;
   margin: 0;
   max-width: 75vw;
@@ -80,7 +80,7 @@
 }
 
 .how .wordWrapper {
-  font-size: max(3.2vw, 1.8rem);
+  font-size: max(3.2vw, 1.6rem);
   line-height: 1.1;
   margin-bottom: 0;
   margin-top: 0;
@@ -277,7 +277,7 @@
 
   @media (max-width: $m) {
     margin-left: 0;
-    margin-right: 2rem;
+    margin-right: 0;
   }
 }
 
@@ -335,7 +335,7 @@
 
   p {
     display: block;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: left;
     text-transform: none;
     max-width: 275px;

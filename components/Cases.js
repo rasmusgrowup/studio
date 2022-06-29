@@ -12,27 +12,45 @@ export default function Cases() {
         <div className={styles.inner}>
           { cases.map(({
             image,
+            video,
             title,
             assignments,
             status,
             url}, i) => (
             <Link href={url} passHref key={i}><a>
               <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              transition={{ duration: 1, delay: (3 + (i / 10)), ease: "easeOut" }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              transition={{ duration: 1, delay: (2.8 + (i / 10)), ease: "easeOut" }}
+              animate={{ opacity: 1, y: 0 }}
               className={styles.case}
               >
-                <Image
-                  src={image}
-                  layout='responsive'
-                  objectFit='cover'
-                  height='400'
-                  width='300'
-                  quality='100'
-                  priority='true'
-                  alt={title}
-                />
+                { image
+                ? <div className={styles.imageWrapper}>
+                    <Image
+                      src={image}
+                      layout='responsive'
+                      objectFit='cover'
+                      height='360'
+                      width='300'
+                      quality='100'
+                      priority='true'
+                      alt={title}
+                    />
+                  </div>
+                : <div className={styles.videoWrapper}>
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      height='auto'
+                      width='100%'
+                      style={{ objectFit: 'cover' }}
+                      >
+                      <source src={video} type='video/mp4' />
+                    </video>
+                  </div>
+                }
                 <div className={styles.info}>
                   <p>{title}</p>
                   <p>{assignments}</p>

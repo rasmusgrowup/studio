@@ -138,7 +138,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}>
           <Link href='mailto:hello@growupstudio.dk'>
             <a className={styles.mail}>
-              hejsa@growup.studio
+              hello@growupstudio.dk
             </a>
           </Link>
         </motion.div>
@@ -281,7 +281,7 @@ export default function Home() {
       variants={variants}
       className={styles.about}>
         <h2 className={styles.h2}>
-          Mantra
+          Priser
         </h2>
         <p className={styles.p}>
           Hver organisation er <b>forskellig</b>, så det bør den tekniske løsning også være. vi tilbyder Skabelon-løsninger med <b>faste priser</b>, eller <b>skræddersyede</b> løsninger

@@ -130,7 +130,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         className={styles.tagline}>
           Vi leverer SEO-optimerede hjemmesider og netbutikker
-          — respektfuldt pakket ind i jeres visuelle identitet.
+          — respektfuldt pakket ind i jeres visuelle identitet. 
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -313,7 +313,7 @@ export default function Tinekhome() {
               <source src={'/organic/organic_video_2.mp4'} type='video/mp4' />
             </video>
             <p>
-              Videoklippene kunne desuden bruges på sociale medier også. 
+              Videoklippene kunne desuden bruges på sociale medier også.
             </p>
           </motion.div>
         </div>

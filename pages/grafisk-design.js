@@ -10,10 +10,6 @@ import Logo from '../public/grafisk-design/Chefjen_logo.jpg'
 import Whisky from '../public/grafisk-design/Whisky_black.jpg'
 import Dabea from '../public/grafisk-design/Dabea_folder.jpg'
 import Postcard from '../public/grafisk-design/Twelveinch_postcard.jpg'
-import Studiet4 from '../public/artdirection/studiet_bagom_twelveinch.jpg'
-import Studiet5 from '../public/artdirection/studiet_skud_twelveinch.jpg'
-import Stue from '../public/twelveinch/twelveinch_stue.jpg'
-import Mickleit from '../public/artdirection/ByMickleit_billede.jpg'
 
 import { motion } from 'framer-motion'
 

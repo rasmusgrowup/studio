@@ -4,16 +4,16 @@ import Image from "next/image"
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
 import cases from '../utils/cases.js'
-import Hero from '../public/twelveinch/hero6.jpg'
-import Havnen from '../public/artdirection/havnen_nick.jpg'
-import Havnen2 from '../public/artdirection/havnen_bagom.jpg'
-import Studiet from '../public/artdirection/studiet_model.jpg'
-import Studiet2 from '../public/artdirection/studiet_bagom.jpg'
-import Studiet3 from '../public/artdirection/studiet_skud.jpg'
-import Studiet4 from '../public/artdirection/studiet_bagom_twelveinch.jpg'
-import Studiet5 from '../public/artdirection/studiet_skud_twelveinch.jpg'
-import Stue from '../public/twelveinch/twelveinch_stue.jpg'
-import Mickleit from '../public/artdirection/ByMickleit_billede.jpg'
+import Hero from '../public/identitetsdesign/DigitalDogme_logo.jpg'
+import DigitalDogme from '../public/identitetsdesign/DigitalDogme_web.jpg'
+import Poster from '../public/identitetsdesign/DigitalDogme_poster.jpg'
+import Dabea from '../public/identitetsdesign/Dabea_folder.jpg'
+import Visitkort from '../public/identitetsdesign/Dabea_visitkort.jpg'
+import DabeaWeb from '../public/identitetsdesign/Dabea_web.jpg'
+import Mobile from '../public/identitetsdesign/Dabea_mobile.jpg'
+import FlexiFloors from '../public/identitetsdesign/FlexiFloors.jpg'
+import Tinekhome from '../public/tinekhome/tinekhome_webshot_2.jpg'
+import Twelveinch from '../public/twelveinch/twelveinch_webshot.jpg'
 
 import { motion } from 'framer-motion'
 
@@ -79,7 +79,7 @@ export default function Identitetsdesign() {
           className={styles.description}>
           <ul className={styles.list}>
             <li className={styles.assignments}>
-              Vi kigger bl.a. på hvilken stemning billederne skal prøve at indfange, farverummet og looket af billederne, og planlægger hele forløbet på fotodagen.
+              Jeres visuelle identitet danner basis for al jeres visuelle kommunikation, såsom tryksager og online markedsføring, emballage, hjemmesider, apps m.m.
             </li>
           </ul>
         </motion.div>
@@ -90,16 +90,7 @@ export default function Identitetsdesign() {
           transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
           animate={{ opacity: 1, y: 0 }}
           className={styles.heroImage}>
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            width='100%'
-            style={{ objectFit: 'cover' }}
-            >
-            <source src={'/organic/Hero.mp4'} type='video/mp4' />
-          </video>
+          <Image src={Hero} layout='responsive' quality='100'/>
         </motion.div>
       </div>
       <motion.div
@@ -109,9 +100,9 @@ export default function Identitetsdesign() {
         viewport={how}
         className={`${styles.resume} ${styles.isAService}`}>
         <p>
-        I samarbejde med professionelle fotostudier, udarbejder Growup en billedestil for jeres produkter til markedsføringsmaterialer og til brug på hjemmesider og webshops. Vi arrangerer et forløb hvor der tages både pack-shots og miljøbilleder.<br /><br/>
-        Udover standard pack-shots kan miljøbilleder bidrage til at præsentere hvordan produkterne tager sig ud i virkelige omgivelser, således kunden danner sig et klart billede af hvad de køber. Vi arrangerer hele forløbet, inklusiv evt. regi, opstilling af miljø, booking af fotomodeller, forberedelse af mock-ups til inspiration m.m.<br/><br/>
-        Vi laver ligeledes art direction for videooptagelser som kan benyttes i den online markedsføring.
+        Identitetsdesign handler om at binde et tydeligt og genkendeligt bånd af værdier omkring alle aspekter af virksomhedens aktiviteter.<br/><br/>
+        Identitetsdesign kan beskrives som en paraply der dækker bredt, over den visuelle identitet og de kommunikative valg, over grundlaget for produktionen og valget af materialer som produkterne er skabt af osv.<br/><br/>
+        Vi hjælper virksomheder med at finde frem til den stærke identitet som skal binde virksomheden sammen med kunderne. Virksomhedens indentitet defineres gennem deres kunder og kundernes forståelse af virksomheden.
         </p>
       </motion.div>
       <section className={styles.waterFall}>
@@ -123,9 +114,9 @@ export default function Identitetsdesign() {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '640px'}}>
-            <Image src={Havnen} />
+            <Image src={DigitalDogme} />
             <p>
-              Her ses et skud bagom videoen, som du ser herover. Vi samarbejder med dygtige fotografer om at skabe videoer og billeder, tiltænkt til brug på hjemmesider og sociale medier.
+              Digital Dogme er vores nyeste projekt indenfor identitetsdesign. Vi fik til opgave at lave en visuel identitet, som skulle passe til en corporate og professionel branche.
             </p>
           </motion.div>
           <motion.div
@@ -135,9 +126,9 @@ export default function Identitetsdesign() {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '440px'}}>
-            <Image src={Havnen2} />
+            <Image src={Poster} />
             <p>
-              Vores filosofi er, at fotograferne skal have plads til at være kreative og få de rette skud. Vi tager derfor et skridt tilbage, og sørger for at bevare overblikket over, om produkterne er synlige, modellen er stylet rigtigt og om drejebogen overholdes.
+              I logoet markerer vi <i>IT</i> med en farve, fordi Digital Dogme handler om digital opkvalificering af den danske arbejdsstyrke. Fonttypen er desuden neutral, og farvepaletten er ikke alt for udfordrende.
             </p>
           </motion.div>
           <motion.div
@@ -147,33 +138,9 @@ export default function Identitetsdesign() {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '400px'}}>
-            <Image src={Studiet} />
+            <Image src={Visitkort} />
             <p>
-              Vi sørger som sagt for at finde tøj til modellen, og instruer vedkommende i, hvordan de skal bevæge sig eller se ud på billedet.
-            </p>
-          </motion.div>
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={how}
-            variants={variants}
-            className={styles.drop}
-            data='right' style={{ maxWidth: '600px'}}>
-            <Image src={Studiet2} />
-            <p>
-              Og så står vi i baggrunden, og sørger for at fotograferne har plads til at arbejde, og at i som kunde, får alle de billeder, i har brug for, samt kvalitetssikrer.
-            </p>
-          </motion.div>
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={how}
-            variants={variants}
-            className={styles.drop}
-            data='left' style={{ maxWidth: '400px'}}>
-            <Image src={Studiet3} />
-            <p>
-              Når billederne er taget, kommer de en tur igennem photoshop, enten hos os eller fotogaferne, og bliver afleveret i passende formater, så de er klar til brug.
+              Vi fik til opgave at give DABEA en ny visuel identitet i efteråret 2021.
             </p>
           </motion.div>
           <motion.div
@@ -183,9 +150,9 @@ export default function Identitetsdesign() {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '420px'}}>
-            <Image src={Studiet4} />
+            <Image src={Dabea} />
             <p>
-              Her ses Rasmus, der er igang med at instruere modellen i, hvordan hun skal holde pladerne. En lille, men meget vigtig detalje, da Twelve Inchs kunder, er meget ømtålelige med deres plader. Det er sådanne detajler vi sikrer, bliver overholdt.
+              DABEAs nye primærfarve er mørkeblå, og fonttypen er Lato. To ret sikre valg, der ikke udfordrer for meget, men netop passer til ejendomsbranchen.
             </p>
           </motion.div>
           <motion.div
@@ -195,9 +162,9 @@ export default function Identitetsdesign() {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Studiet5} />
+            <Image src={DabeaWeb} />
             <p>
-              Her ses det endelige skud. Vi sørgede for at kontakte virksomheder, der ville udlåne møbler og regi, samt fandt en stylist, der kunne style miljøet. Produkterne står det rigtige sted i billedet, og modellen holder pladen helt korrekt.
+              Vi overførte den nye visuelle identitet til DABEAs hjemmeside.
             </p>
           </motion.div>
           <motion.div
@@ -206,18 +173,10 @@ export default function Identitetsdesign() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '360px'}}>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={{ objectFit: 'cover' }}
-              >
-              <source src={'/artdirection/InstaStory.mp4'} type='video/mp4' />
-            </video>
+            data='right' style={{ maxWidth: '410px'}}>
+            <Image src={FlexiFloors} />
             <p>
-              Her er en lille bagom-story fra Instagram, hvor i kan se, at vi bygger stuemiljøet op. På de projekter, hvor vi har fået lov, deler vi oplevelsen med vores følgere på Instagram.
+              Vi prøver altid at gøre logoet så simpelt, som muligt — jo mere simpelt logoet er, jo nemmere er det at huske.
             </p>
           </motion.div>
           <motion.div
@@ -226,18 +185,10 @@ export default function Identitetsdesign() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '360px'}}>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={{ objectFit: 'cover' }}
-              >
-              <source src={'/artdirection/ByMickleit_video.mp4'} type='video/mp4' />
-            </video>
+            data='left' style={{ maxWidth: '600px'}}>
+            <Image src={Tinekhome} />
             <p>
-              Her ses Rie, der holder øje med og retter til, om modellens hår og tøj sidder korrekt.
+              Tinekhomes nye udtryk på hjemmesiden, er et resultat af en opdateret visuel identitet.
             </p>
           </motion.div>
           <motion.div
@@ -246,10 +197,10 @@ export default function Identitetsdesign() {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '570px'}}>
-            <Image src={Mickleit} />
+            data='right' style={{ maxWidth: '900px'}}>
+            <Image src={Twelveinch} />
             <p>
-              Et simpelt skud som dette, er resultatet af et godt forarbejde. Der skal findes den rigtige model, tøjet skal passe til smykkerne — som er produktet der sælges her — en stol at sidde på, modellen skal instrueres, så smykkerne vises korrekt, fotograferne skal ligge det rette lys, så hudfarve og smykker ser korrekte ud, og meget mere.
+              Vi har løbende optimeret på og raffineret Twelve Inchs visuelle identitet. Det kan ses på hjemmesiden, der fornyligt fik et ansigtsløft.
             </p>
           </motion.div>
         </div>

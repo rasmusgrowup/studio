@@ -32,7 +32,7 @@ export default function Nav() {
           <ul className={styles.services}>
             <li className={styles.overskrift}>services</li>
             { services.map(( { service, url }, i ) => (
-              <li className={styles.li} key={i}>
+              <li className={styles.li} key={i} onClick={toggleFunction}>
                 <Link href={url}>
                   <a>
                     {service}

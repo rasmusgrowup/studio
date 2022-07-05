@@ -22,7 +22,7 @@ const titelWords = [
   'at ',
   'imigrere ',
   'fra ',
-  'WooCommerce ',
+  'Squarespace ',
   'til ',
   'Shopify ',
   'på ',
@@ -125,7 +125,7 @@ export default function Tinekhome() {
           className={styles.description}>
           <ul className={styles.list}>
             <li className={styles.assignments}>
-              Karens Bord var træt af deres WooCommerce-løsning, og gik til os for hjælp til en bedre løsning. Vi hjalp dem over på Shopify, hvilket de flere gange selv har sagt, har været den bedste beslutning længe.
+              Karens Bord var træt af deres Squarespace-løsning, og gik til os for hjælp til en bedre løsning. Vi hjalp dem over på Shopify, hvilket de flere gange selv har sagt, har været den bedste beslutning længe.
             </li>
           </ul>
         </motion.div>

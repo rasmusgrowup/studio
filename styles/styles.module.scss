@@ -6,14 +6,19 @@
 }
 
 .h1 {
-  font-size: max(4.25vw, 2.2rem);
+  font-size: 4.25vw;
   line-height: 1;
   margin: 0;
   max-width: 75vw;
 
   @media (max-width: $m) {
-    line-height: 0.8;
+    font-size: 3rem;
     max-width: 100%;
+  }
+
+  @media (max-width: $s) {
+    font-size: 2.2rem;
+    line-height: 0.8;
   }
 }
 
@@ -292,6 +297,16 @@
   }
 }
 
+.isAService {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+
+  @media (max-width: $m) {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
+
 // WaterFall styling
 
 .waterFall {
@@ -314,6 +329,7 @@
   .drop {
     display: block;
     margin-top: 12vw;
+    width: 100%;
 
     @media (max-width: $m) {
       max-width: 100% !important;
@@ -338,7 +354,7 @@
     font-size: 1em;
     text-align: left;
     text-transform: none;
-    max-width: 275px;
+    max-width: 300px;
     width: 100%;
   }
 

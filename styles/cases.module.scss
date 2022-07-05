@@ -28,8 +28,19 @@
     }
   }
 
+  @media (max-width: $s) {
+    a:nth-of-type(even) .case {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
   .case {
     pointer-events: none;
+
+    @media (max-width: $s) {
+      width: 75%;
+    }
   }
 
   .case p {
@@ -54,7 +65,11 @@
     position: relative;
 
     @media (max-width: $m) {
-      height: 110vw;
+      height: 54vw;
+    }
+
+    @media (max-width: $s) {
+      height: 80vw;
     }
   }
 

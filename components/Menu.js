@@ -1,10 +1,12 @@
 import Link from "next/link"
+import { useRouter } from 'next/router'
 import styles from '../styles/menu.module.scss'
 import { useState } from 'react'
 import cases from '../utils/cases.js'
 import services from '../utils/services.js'
 
 export default function Menu() {
+  const router = useRouter()
   const [ showCases, setShowCases ] = useState(false);
   const [ showContact, setShowContact ] = useState(false);
   const [ showServices, setShowServices ] = useState(false);
@@ -39,14 +41,14 @@ export default function Menu() {
             Services
         </li>
         <li className={styles.li} onClick={toggleContact}>
-            Om os
+            Kontakt os
         </li>
       </ul>
       <ul className={`${styles.cases} ${ showCases ? `${styles.show}` : `${styles.hide}` } `}>
         { cases.map(({ title, url }, i) => (
           <li className={styles.case} key={i} onClick={setAll}>
             <Link href={url}>
-              <a className={styles.a}>
+              <a className={`${styles.a} ${router.asPath === url ? `${styles.active}` : ''}`}>
                 {title}
                 <span className={styles.number}>0{i + 1}</span>
               </a>
@@ -61,7 +63,7 @@ export default function Menu() {
         { services.map(({ service, url }, i) => (
           <li className={styles.service} key={i} onClick={setAll}>
             <Link href={url}>
-              <a className={styles.a}>
+              <a className={`${styles.a} ${router.asPath === url ? `${styles.active}` : ''}`}>
                 {service}
               </a>
             </Link>

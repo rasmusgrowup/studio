@@ -4,6 +4,10 @@ const services = [
     url: '/art-direction'
   },
   {
+    service: 'Grafisk design',
+    url: '/grafisk-design'
+  },
+  {
     service: 'Identitetsdesign',
     url: '/identitetsdesign'
   },

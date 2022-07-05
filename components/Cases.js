@@ -43,9 +43,9 @@ export default function Cases() {
                       muted
                       loop
                       playsInline
-                      height='auto'
+                      height='100%'
                       width='100%'
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: 'cover', objectPosition: 'center' }}
                       >
                       <source src={video} type='video/mp4' />
                     </video>

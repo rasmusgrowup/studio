@@ -18,20 +18,18 @@ import Mickleit from '../public/artdirection/ByMickleit_billede.jpg'
 import { motion } from 'framer-motion'
 
 const titelWords = [
-  'Skræddersyede ',
-  'billeder ',
-  'og ',
-  'videoer ',
+  'Vi ',
+  'skaber ',
+  'visuelle ',
+  'identiteter ',
   'til ',
-  'jeres ',
-  'hjemmeside, ',
-  'tryksager ',
-  'eller ',
-  'sociale ',
-  'medier.'
+  'start-ups ',
+  'og ',
+  'etablerede ',
+  'brands.'
 ];
 
-export default function ArtDirection() {
+export default function Identitetsdesign() {
   const variants = {
     visible: {
       opacity: 1,

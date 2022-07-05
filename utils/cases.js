@@ -24,7 +24,7 @@ const cases = [
     periode: '2018-2022'
   },
   {
-    video: '/organic/Walking.mp4',
+    video: '/organic/Eating.mp4',
     title: 'The Organic Crave',
     assignments: 'Art Direction & Shopify-løsning',
     status: 'Afsluttet',

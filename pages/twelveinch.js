@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -72,7 +73,7 @@ const howSecond = [
   'inkluderet.'
 ];
 
-export default function Tinekhome() {
+function Twelveinch({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -109,6 +110,11 @@ export default function Tinekhome() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -311,3 +317,10 @@ export default function Tinekhome() {
     </>
   )
 }
+
+Twelveinch.defaultProps = {
+  title: 'Growup Studio | Casehistorie | Twelveinch',
+  description: 'Vi hjælper Twelve Inch med at holde et ensartet visuelt udtryk på deres Shopify netbutik, SoMe-kanaler, Amazon markedspladser og trykte sager. Vi leverer art direction, grafisk design, webudvikling og sparring i online markedsføring.'
+}
+
+export default Twelveinch

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -70,7 +71,7 @@ const howSecond = [
   'TikTok.'
 ];
 
-export default function Tinekhome() {
+function Organic({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -107,6 +108,11 @@ export default function Tinekhome() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -321,3 +327,10 @@ export default function Tinekhome() {
     </>
   )
 }
+
+Organic.defaultProps = {
+  title: 'Growup Studio | Casehistorie | The Organic Crave Company',
+  description: 'The Organic Crave kom til os for at få hjælp til at vælge den rigtige ecommerce-platform. Den skulle være skalerbar, nem at vedligeholde og have gode integrationsmuligheder. Shopify var den naturlige løsning.'
+}
+
+export default Organic

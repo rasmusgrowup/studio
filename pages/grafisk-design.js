@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -27,7 +28,7 @@ const titelWords = [
   'identitet.'
 ];
 
-export default function Identitetsdesign() {
+function GrafiskDesign({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -64,6 +65,11 @@ export default function Identitetsdesign() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -170,3 +176,10 @@ export default function Identitetsdesign() {
     </>
   )
 }
+
+GrafiskDesign.defaultProps = {
+  title: 'Growup Studio | Service | Grafisk Design',
+  description: 'Vi laver logoer, kataloger, indsalgsbrochurer, POS-materialer, emballage, postkort, certifikater, visitkort, m.m.. Og vi matcher jeres visuelle identitet og design på hjemmesiden, så man kan se, at i har et ensartet udtryk på tværs af jeres brugerflader.'
+}
+
+export default GrafiskDesign

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -28,7 +29,7 @@ const titelWords = [
   'brands.'
 ];
 
-export default function ReactUdvikling() {
+function ReactUdvikling({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -65,6 +66,11 @@ export default function ReactUdvikling() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -224,3 +230,10 @@ export default function ReactUdvikling() {
     </>
   )
 }
+
+ReactUdvikling.defaultProps = {
+  title: 'Growup Studio | Service | React og NEXT.JS udvikling',
+  description: 'Vi udvikler i React og NEXT.JS. React-hjemmesider med et NEXT.JS lag ovenpå er ensbetydende med perfekt SEO-score, lynhurtige hjemmesider, mulighed for at oversætte hjemmesiden til en App, og for os, total designfrihed.'
+}
+
+export default ReactUdvikling

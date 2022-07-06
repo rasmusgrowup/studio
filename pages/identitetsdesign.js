@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -29,7 +30,7 @@ const titelWords = [
   'brands.'
 ];
 
-export default function Identitetsdesign() {
+function Identitetsdesign({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -66,6 +67,11 @@ export default function Identitetsdesign() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -208,3 +214,10 @@ export default function Identitetsdesign() {
     </>
   )
 }
+
+Identitetsdesign.defaultProps = {
+  title: 'Growup Studio | Service | Identitetsdesign',
+  description: 'Vi skaber visuelle identiteter til start-ups og etablerede brands. Jeres visuelle identitet danner basis for al jeres visuelle kommunikation, såsom tryksager og online markedsføring, emballage, hjemmesider, apps m.m.'
+}
+
+export default Identitetsdesign

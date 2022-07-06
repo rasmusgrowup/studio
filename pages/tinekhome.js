@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -71,7 +72,7 @@ const howSecond = [
   'omsætningen.'
 ];
 
-export default function Tinekhome() {
+function Tinekhome({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -108,6 +109,11 @@ export default function Tinekhome() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -320,3 +326,10 @@ export default function Tinekhome() {
     </>
   )
 }
+
+Tinekhome.defaultProps = {
+  title: 'Growup Studio | Casehistorie | Tinekhome',
+  description: 'Tine K Home kom til os, fordi de var kede af, at deres online univers ikke reflekterede kvaliteten i deres produkter. De var desuden klar over, at der flere steder på hjemmesiden var problemer med brugeroplevelsen, pga. manglende responsivt design.'
+}
+
+export default Tinekhome

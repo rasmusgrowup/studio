@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -32,7 +33,7 @@ const titelWords = [
   'brands.'
 ];
 
-export default function Shopify() {
+function Shopify({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -69,6 +70,11 @@ export default function Shopify() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -223,3 +229,10 @@ export default function Shopify() {
     </>
   )
 }
+
+Shopify.defaultProps = {
+  title: 'Growup Studio | Service | Shopify-løsninger',
+  description: 'Vi er certificerede Shopify partnere. Det betyder at i får ekstra god support til Shopify hos os, og at vi kan videredvikle på jeres webshop. Det betyder også, at vi kan skræddersy en Shopify-løsning, til jeres unikke behov.'
+}
+
+export default Shopify

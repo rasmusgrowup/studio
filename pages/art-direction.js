@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -31,7 +32,7 @@ const titelWords = [
   'medier.'
 ];
 
-export default function ArtDirection() {
+function ArtDirection({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -68,6 +69,11 @@ export default function ArtDirection() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -259,3 +265,10 @@ export default function ArtDirection() {
     </>
   )
 }
+
+ArtDirection.defaultProps = {
+  title: 'Growup Studio | Service | Art Direction',
+  description: 'Skræddersyede billeder og videoer til jeres hjemmeside, tryksager eller sociale medier. Vi kigger bl.a. på hvilken stemning billederne skal prøve at indfange, farverummet og looket af billederne, og planlægger hele forløbet på fotodagen.'
+}
+
+export default ArtDirection

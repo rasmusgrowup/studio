@@ -130,7 +130,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         className={styles.tagline}>
           Vi leverer SEO-optimerede hjemmesider og netbutikker
-          — respektfuldt pakket ind i jeres visuelle identitet. 
+          — respektfuldt pakket ind i jeres visuelle identitet.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -174,15 +174,17 @@ export default function Home() {
         className={styles.h2}>
           Services
         </motion.h2>
-        <ul className={styles.ul}>
+        <motion.ul
+          initial='hidden'
+          whileInView='visible'
+          viewport={how}
+          variants={variants}
+          className={styles.ul}>
           { services.map(( { service, url }, i) => (
             <motion.li
-              initial='hidden'
-              whileInView='visible'
-              viewport={how}
               variants={variants}
-            className={styles.li}
-            key={i}>
+              className={styles.li}
+              key={i}>
               <Link href={url}>
                 <a>
                   {service}
@@ -190,7 +192,7 @@ export default function Home() {
               </Link>
             </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </section>
       <motion.section
         initial='hidden'
@@ -248,21 +250,23 @@ export default function Home() {
             )) }
           </div>
       </motion.section>
-      <section className={styles.clients}>
+      <motion.section
+        initial='hidden'
+        whileInView='visible'
+        viewport={how}
+        variants={variants}
+        className={styles.clients}>
         <motion.h2
           initial='hidden'
           whileInView='visible'
           viewport={how}
           variants={variants}
-        className={styles.h2}>
+          className={styles.h2}>
           Kunder
         </motion.h2>
         <ul className={styles.references}>
           { data.map(({ title, year}) => (
             <motion.li
-              initial='hidden'
-              whileInView='visible'
-              viewport={how}
               variants={variants}
               className={styles.reference}
               key={title}>
@@ -273,7 +277,7 @@ export default function Home() {
             </motion.li>
           ))}
         </ul>
-      </section>
+      </motion.section>
       <motion.section
       initial='hidden'
       whileInView='visible'

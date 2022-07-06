@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from 'next/head'
 
 import styles from '../styles/styles.module.scss'
 import Title from '../components/Title'
@@ -75,7 +76,7 @@ const howSecond = [
   'opstår.'
 ];
 
-export default function Tinekhome() {
+function Karensbord({ title, description }) {
   const variants = {
     visible: {
       opacity: 1,
@@ -112,6 +113,11 @@ export default function Tinekhome() {
 
   return (
     <>
+      <Head>
+        <meta name="description" content={description} key='description'/>
+        <meta name="og:title" content={title} key='title'/>
+        <title>{title}</title>
+      </Head>
       <section>
         <h1 className={styles.h1}>
           <Title arr={titelWords} />
@@ -278,3 +284,10 @@ export default function Tinekhome() {
     </>
   )
 }
+
+Karensbord.defaultProps = {
+  title: 'Growup Studio | Casehistorie | Karensbord',
+  description: 'Karens Bord var træt af deres Squarespace-løsning, og gik til os for hjælp til en bedre løsning. Vi hjalp dem over på Shopify, hvilket de flere gange selv har sagt, har været den bedste beslutning længe.'
+}
+
+export default Karensbord

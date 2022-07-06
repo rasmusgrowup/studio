@@ -119,8 +119,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '640px'}}>
-            <Image src={DigitalDogme} />
+            data='left' style={{ maxWidth: '40vw'}}>
+            <Image src={DigitalDogme} layout='responsive' />
             <p>
               Digital Dogme er vores nyeste projekt indenfor identitetsdesign. Vi fik til opgave at lave en visuel identitet, som skulle passe til en corporate og professionel branche.
             </p>
@@ -131,8 +131,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '440px'}}>
-            <Image src={Poster} />
+            data='right' style={{ maxWidth: '27vw'}}>
+            <Image src={Poster} layout='responsive' />
             <p>
               I logoet markerer vi <i>IT</i> med en farve, fordi Digital Dogme handler om digital opkvalificering af den danske arbejdsstyrke. Fonttypen er desuden neutral, og farvepaletten er ikke alt for udfordrende.
             </p>
@@ -143,8 +143,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '400px'}}>
-            <Image src={Visitkort} />
+            data='left' style={{ maxWidth: '24vw'}}>
+            <Image src={Visitkort} layout='responsive' />
             <p>
               Vi fik til opgave at give DABEA en ny visuel identitet i efteråret 2021.
             </p>
@@ -155,8 +155,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '420px'}}>
-            <Image src={Dabea} />
+            data='right' style={{ maxWidth: '30vw'}}>
+            <Image src={Dabea} layout='responsive' />
             <p>
               DABEAs nye primærfarve er mørkeblå, og fonttypen er Lato. To ret sikre valg, der ikke udfordrer for meget, men netop passer til ejendomsbranchen.
             </p>
@@ -167,8 +167,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={DabeaWeb} />
+            data='left' style={{ maxWidth: '40vw'}}>
+            <Image src={DabeaWeb} layout='responsive' />
             <p>
               Vi overførte den nye visuelle identitet til DABEAs hjemmeside.
             </p>
@@ -179,8 +179,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '410px'}}>
-            <Image src={FlexiFloors} />
+            data='right' style={{ maxWidth: '22vw'}}>
+            <Image src={FlexiFloors} layout='responsive' />
             <p>
               Vi prøver altid at gøre logoet så simpelt, som muligt — jo mere simpelt logoet er, jo nemmere er det at huske.
             </p>
@@ -191,8 +191,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Tinekhome} />
+            data='left' style={{ maxWidth: '42vw'}}>
+            <Image src={Tinekhome} layout='responsive' />
             <p>
               Tinekhomes nye udtryk på hjemmesiden, er et resultat af en opdateret visuel identitet.
             </p>
@@ -203,8 +203,8 @@ function Identitetsdesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '900px'}}>
-            <Image src={Twelveinch} />
+            data='right' style={{ maxWidth: '66vw'}}>
+            <Image src={Twelveinch} layout='responsive' />
             <p>
               Vi har løbende optimeret på og raffineret Twelve Inchs visuelle identitet. Det kan ses på hjemmesiden, der fornyligt fik et ansigtsløft.
             </p>

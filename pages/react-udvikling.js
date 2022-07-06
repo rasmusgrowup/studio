@@ -119,7 +119,7 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '640px'}}>
+            data='left' style={{ maxWidth: '42vw'}}>
             <video
               autoPlay
               muted
@@ -139,8 +139,8 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '360px'}}>
-            <Image src={StojMobile} />
+            data='right' style={{ maxWidth: '22vw'}}>
+            <Image src={StojMobile} layout='responsive' />
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -151,8 +151,8 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '520px'}}>
-            <Image src={HejLiv} />
+            data='left' style={{ maxWidth: '34vw'}}>
+            <Image src={HejLiv} layout='responsive' />
             <p>
               Her ses forsiden til hejliv.dk — et microsite, der viser Liv Cramer Holmes arbejde. Microsites er utroligt hurtige at udvikle i React — det kan tage helt ned til en uge at udvikle og publisere.
             </p>
@@ -163,8 +163,8 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '440px'}}>
-            <Image src={ChefJen} />
+            data='right' style={{ maxWidth: '30vw'}}>
+            <Image src={ChefJen} layout='responsive' />
             <p>
               Til digitaldogme.dk har vi desuden integreret et fremragende cms-system, kaldet GraphCMS. Digital Dogme kan dermed selv vedligeholde hjemmesiden, ved at opdatere siderne med nye tekster og sektioner.
             </p>
@@ -175,7 +175,7 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '520px'}}>
+            data='left' style={{ maxWidth: '36vw'}}>
             <video
               autoPlay
               muted
@@ -195,8 +195,8 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '600px'}}>
-            <Image src={GraphCMS} />
+            data='right' style={{ maxWidth: '42vw'}}>
+            <Image src={GraphCMS} layout='responsive' />
             <p>
               Til digitaldogme.dk har vi desuden integreret et fremragende cms-system, kaldet GraphCMS. Digital Dogme kan dermed selv vedligeholde hjemmesiden, ved at opdatere siderne med nye tekster og sektioner.
             </p>
@@ -207,8 +207,8 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '300px'}}>
-            <Image src={Daniel} />
+            data='left' style={{ maxWidth: '20vw'}}>
+            <Image src={Daniel} layout='responsive' />
             <p>
               Vi drømmer om at skabe unikke og mindeværdige hjemmesider, der bliver kendt for deres simple og professionelle udtryk — vigtigst er det dog, at i som kunde får et værktøj, der understøtter jeres forretning.
             </p>
@@ -219,8 +219,8 @@ function ReactUdvikling({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '700px'}}>
-            <Image src={MariasRum} />
+            data='right' style={{ maxWidth: '46vw'}}>
+            <Image src={MariasRum} layout='responsive' />
             <p>
               Marias Rum er udviklet i React, med NEXT.JS som lag oven på, og et CMS-system tilkoblet, så hun selv kan redigere i hjemmesidens indhold, og skrive nye indlæg til bloggen.
             </p>

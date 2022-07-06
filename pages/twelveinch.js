@@ -222,8 +222,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '640px'}}>
-            <Image src={Webshot} />
+            data='left' style={{ maxWidth: '46vw'}}>
+            <Image src={Webshot} layout='responsive' />
             <p>
               Sådan så twelve-inch.com ud, efter at vi i foråret 2022 leverede en ny komplet Shopify-løsning.
             </p>
@@ -234,8 +234,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '440px'}}>
-            <Image src={Webshot2} />
+            data='right' style={{ maxWidth: '27vw'}}>
+            <Image src={Webshot2} layout='responsive' />
             <p>
               Webshoppen er integreret med Amazon, således at produkterne kan sælges direkte fra Amazons lagre rundt om i verden. Det betyder at Twelve Inch kan sælge direkte til kunder i USA, EU, England, Japan, Australien mm. uden selv at have et lager, og med mindre end 2 dages levering.
             </p>
@@ -246,8 +246,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '340px'}}>
-            <Image src={Mobileshot} />
+            data='left' style={{ maxWidth: '22vw'}}>
+            <Image src={Mobileshot} layout='responsive' />
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -258,8 +258,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '600px'}}>
-            <Image src={Stoj} />
+            data='right' style={{ maxWidth: '44vw'}}>
+            <Image src={Stoj} layout='responsive' />
             <p>
               Vi har udviklet en billedstil til Twelve Inch, der bruges på tværs af deres mange salgskanaler.
             </p>
@@ -270,8 +270,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '400px'}}>
-            <Image src={How} />
+            data='right' style={{ maxWidth: '22vw'}}>
+            <Image src={How} layout='responsive' />
             <p>
               Vi har også udviklet en billedserie, der bruges på tryksager, hos forhandlere og på webshoppen, som viser hvordan produktet monteres og bruges.
             </p>
@@ -282,8 +282,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Gallery} />
+            data='left' style={{ maxWidth: '40vw'}}>
+            <Image src={Gallery} layout='responsive' />
             <p>
               Vi hjælper Twelve Inch med deres billedunivers, ved bl.a. at finde interiør og regi til photoshoots. Vi arbejder efter en drejebog, så vi sikrer, at i som kunde, får alle de billeder i har brug for.
             </p>
@@ -294,8 +294,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '360px'}}>
-            <Image src={Insta} />
+            data='right' style={{ maxWidth: '20vw'}}>
+            <Image src={Insta} layout='responsive' />
             <p>
               Vi sørger for at billederne passer til flere forskellige medier, herunder Instagram, Pinterest, Amazon osv.
             </p>
@@ -306,8 +306,8 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '500px'}}>
-            <Image src={Stue} />
+            data='left' style={{ maxWidth: '46vw'}}>
+            <Image src={Stue} layout='responsive' />
             <p>
               De billeder vi har skabt til Twelve Inch, har samlet over 200.000 unikke visninger på Pinterest.
             </p>

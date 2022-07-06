@@ -117,8 +117,8 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '440px'}}>
-            <Image src={Buffetskilte} />
+            data='left' style={{ maxWidth: '30vw'}}>
+            <Image src={Buffetskilte} layout='responsive' />
             <p>
               Her ses et bud på en folder, vi har lavet til catering-virksomheden Chef Jen. Vores forslag er, at folderen kan stilles på bordet ved retterne, for at forklare gæsterne, hvad de spiser.
             </p>
@@ -129,8 +129,8 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '570px'}}>
-            <Image src={Logo} />
+            data='right' style={{ maxWidth: '36vw'}}>
+            <Image src={Logo} layout='responsive' />
             <p>
               Logoet til Chef Jen er lavet således, at navnet <i>Jen</i> står tydeligt frem. Det er gjort i et forsøg på, at kommunikere ud, at Jen leverer en <i>personlig</i> og <i>professionel</i> service. Det er desuden super genkendeligt.
             </p>
@@ -141,8 +141,8 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '400px'}}>
-            <Image src={Whisky} />
+            data='left' style={{ maxWidth: '25vw'}}>
+            <Image src={Whisky} layout='responsive' />
             <p>
               Eksempelvis lægger man mærke til, at ordet <i>Jen</i> står tydeligt frem, i denne mockup.
             </p>
@@ -153,8 +153,8 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '380px'}}>
-            <Image src={Dabea} />
+            data='right' style={{ maxWidth: '24vw'}}>
+            <Image src={Dabea} layout='responsive' />
             <p>
               Vi designer foldere, kataloger og andre tryksager. Vi afleverer en trykklar fil, så i selv kan finde en leverandør, eller vi leverer den færdige folder, fra det trykkeri vi samarbejder med.
             </p>
@@ -165,8 +165,8 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '580px'}}>
-            <Image src={Postcard} />
+            data='left' style={{ maxWidth: '42vw'}}>
+            <Image src={Postcard} layout='responsive' />
             <p>
               Her ses en bunke postkort, som vi har lavet til Twelve Inch. Det er et postkort, der sendes med ved alle nye ordre, og er en metode til at score lidt ekstra point hos kunderne.
             </p>

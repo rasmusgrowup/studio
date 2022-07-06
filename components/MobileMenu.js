@@ -42,9 +42,9 @@ export default function Nav() {
             ))}
           </ul>
           <div className={styles.contact}>
-            <Link href='mailto:hejsa@growup.studio'>
+            <Link href='mailto:hello@growupstudio.dk'>
               <a className={styles.mail}>
-                hejsa@growup.studio
+                hello@growupstudio.dk
               </a>
             </Link>
             <Link href='tel:+4531623733'>

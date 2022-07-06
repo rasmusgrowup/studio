@@ -75,9 +75,9 @@ export default function Menu() {
       </ul>
       <ul className={`${styles.contact} ${ showContact ? `${styles.show}` : `${styles.hide}` } `}>
         <li className={styles.li} onClick={setAll}>
-          <Link href='mailto:hejsa@growup.studio'>
+          <Link href='mailto:hello@growupstudio.dk'>
             <a>
-              hejsa@growup.studio
+              hello@growupstudio.dk
             </a>
           </Link>
         </li>

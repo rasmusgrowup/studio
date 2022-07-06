@@ -143,8 +143,12 @@
   border-radius: 4px;
   height: 8px;
   margin-right: 0.5rem;
-  margin-top: 5px;
+  margin-top: 0.4vw;
   min-width: 8px;
+
+  @media (max-width: $m) {
+    margin-top: 5px;
+  }
 }
 
 .p {
@@ -199,9 +203,14 @@
 }
 
 .tagline {
+  font-size: max(1.1vw, 1em);
   margin-top: 2rem;
-  max-width: 450px;
+  max-width: 29vw;
   text-transform: none;
+
+  @media (max-width: $m) {
+    max-width: 100%;
+  }
 }
 
 // Case styling
@@ -220,12 +229,18 @@
 }
 
 .assignments {
-  max-width: 400px;
+  font-size: max(1.1vw, 1em);
+  margin-top: 3vw;
+  max-width: 29vw;
   text-transform: none;
+
+  @media (max-width: $m) {
+    max-width: 100%;
+  }
 }
 
 .hero {
-  margin-top: 4rem;
+  margin-top: 3vw;
 
   @media (max-width: $m) {
     margin-top: 2rem;
@@ -245,7 +260,7 @@
 .heroList {
   display: flex;
   list-style: none;
-  margin-top: 4rem;
+  margin-top: 3vw;
   padding: 0;
 
   @media (max-width: $m) {
@@ -254,6 +269,7 @@
   }
 
   .link {
+    font-size: max(1.1vw, 1em);
     padding-right: 10rem;
     min-width: 50%;
 
@@ -266,6 +282,7 @@
 
   .kunde,
   .periode {
+    font-size: max(1.1vw, 1em);
     text-transform: none;
     width: 15%;
 
@@ -278,7 +295,7 @@
 .resume {
   margin-left: 50%;
   margin-right: 4rem;
-  margin-top: 2rem;
+  margin-top: 3vw;
 
   @media (max-width: $m) {
     margin-left: 0;
@@ -287,19 +304,15 @@
 }
 
 .resume p {
-  font-size: 1.3em;
+  font-size: max(1.5vw, 1.25em);
   line-height: 1.5;
   margin: 0;
   text-transform: none;
-
-  @media (max-width: $m) {
-    font-size: 1.2em;
-  }
 }
 
 .isAService {
-  margin-bottom: 6rem;
-  margin-top: 6rem;
+  margin-bottom: 6vw;
+  margin-top: 6vw;
 
   @media (max-width: $m) {
     margin-bottom: 3rem;
@@ -316,8 +329,12 @@
   .inner {
     display: block;
     margin: 0 auto;
-    max-width: $l;
+    max-width: 80vw;
     width: 100%;
+
+    @media (max-width: $m) {
+      max-width: 100%;
+    }
 
     &::after {
       clear: both;

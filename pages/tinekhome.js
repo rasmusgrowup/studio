@@ -219,8 +219,8 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '640px'}}>
-            <Image src={Webshot} />
+            data='left' style={{ maxWidth: '39vw'}}>
+            <Image src={Webshot} layout='responsive' />
             <p>
               Vi har siden 2019 stået for at opdatere forsiden på tinekhome.com, for at supportere deres udsalg eller lancering af nye kollektioner
             </p>
@@ -231,8 +231,8 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '440px'}}>
-            <Image src={Webshot2} />
+            data='right' style={{ maxWidth: '29vw'}}>
+            <Image src={Webshot2} layout='responsive' />
             <p>
               Kunderne blev tabt ved checkout, der var besværlig at komme igennem, forvirrende at bruge og manglede responsivt design
             </p>
@@ -243,8 +243,8 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Webshot3} />
+            data='left' style={{ maxWidth: '36vw'}}>
+            <Image src={Webshot3} layout='responsive' />
             <p>
               Efter at vi har redesignet checkout-flowet, er Tinekhomes omsætning steget markant
             </p>
@@ -255,8 +255,8 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '340px'}}>
-            <Image src={Mobileshot} />
+            data='right' style={{ maxWidth: '20vw'}}>
+            <Image src={Mobileshot} layout='responsive' />
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -267,7 +267,7 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '620px'}}>
+            data='left' style={{ maxWidth: '44vw'}}>
             <video
               autoPlay
               muted
@@ -287,7 +287,7 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '320px'}}>
+            data='right' style={{ maxWidth: '24vw'}}>
             <video
               autoPlay
               muted
@@ -307,7 +307,7 @@ function Tinekhome({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '400px'}}>
+            data='left' style={{ maxWidth: '30vw'}}>
             <video
               autoPlay
               muted

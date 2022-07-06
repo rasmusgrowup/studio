@@ -225,8 +225,8 @@ function Karensbord({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '640px'}}>
-            <Image src={Webshot} />
+            data='left' style={{ maxWidth: '44vw'}}>
+            <Image src={Webshot} layout='responsive' />
             <p>
               Foruden at levere Shopify-skabelonen, har vi hjulpet Karens Bord med at opbygge deres sider, tilføje produkter og tilføje 3. parts integrationer til butikken.
             </p>
@@ -237,8 +237,8 @@ function Karensbord({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '440px'}}>
-            <Image src={Webshot2} />
+            data='right' style={{ maxWidth: '28vw'}}>
+            <Image src={Webshot2} layout='responsive' />
             <p>
               Selvom vi ikke har lavet en decideret visuel identitet til Karens Bord  — endnu — har vi sørget for, at hele hjemmesiden har et ensartet udtryk.
             </p>
@@ -249,8 +249,8 @@ function Karensbord({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Webshot3} />
+            data='left' style={{ maxWidth: '40vw'}}>
+            <Image src={Webshot3} layout='responsive' />
             <p>
               Karens Bord kan supplere deres udlejning af service med salg fra deres webshop.
             </p>
@@ -261,8 +261,8 @@ function Karensbord({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '340px'}}>
-            <Image src={Mobileshot} />
+            data='right' style={{ maxWidth: '20vw'}}>
+            <Image src={Mobileshot} layout='responsive' />
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -273,8 +273,8 @@ function Karensbord({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '600px'}}>
-            <Image src={Webshot4} />
+            data='left' style={{ maxWidth: '50vw'}}>
+            <Image src={Webshot4} layout='responsive' />
             <p>
               Vi er super vilde med Karens Bords billedstil. Her kan man virkelig se, hvor vigtigt det er, at få produceret flotte billeder til hjemmesiden.
             </p>

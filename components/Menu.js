@@ -33,17 +33,17 @@ export default function Menu() {
 
   return (
     <>
-      <ul className={`${styles.list} ${ showCases || showContact || showServices ? `${styles.hide}` : `${styles.show}` } `}>
-        <li className={styles.li} onClick={toggleCases}>
+      <div className={`${styles.list} ${ showCases || showContact || showServices ? `${styles.hide}` : `${styles.show}` } `}>
+        <div className={styles.li} onClick={toggleCases}>
           Case-historier
-        </li>
-        <li className={styles.li} onClick={toggleServices}>
+        </div>
+        <div className={styles.li} onClick={toggleServices}>
             Services
-        </li>
-        <li className={styles.li} onClick={toggleContact}>
+        </div>
+        <div className={styles.li} onClick={toggleContact}>
             Kontakt os
-        </li>
-      </ul>
+        </div>
+      </div>
       <ul className={`${styles.cases} ${ showCases ? `${styles.show}` : `${styles.hide}` } `}>
         { cases.map(({ title, url }, i) => (
           <li className={styles.case} key={i} onClick={setAll}>

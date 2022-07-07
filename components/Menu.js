@@ -29,8 +29,6 @@ export default function Menu() {
     setShowServices(false)
   }
 
-  console.log(showContact)
-
   return (
     <>
       <div className={`${styles.list} ${ showCases || showContact || showServices ? `${styles.hide}` : `${styles.show}` } `}>

@@ -166,7 +166,7 @@ function ReactUdvikling({ title, description }) {
             data='right' style={{ maxWidth: '30vw'}}>
             <Image src={ChefJen} layout='responsive' />
             <p>
-              Til digitaldogme.dk har vi desuden integreret et fremragende cms-system, kaldet GraphCMS. Digital Dogme kan dermed selv vedligeholde hjemmesiden, ved at opdatere siderne med nye tekster og sektioner.
+              Chef Jen er lavet i React med GraphCMS som backend-system. Det betyder at Chef Jen selv kan tilføje eller fjerne menuer på hjemmesiden, så den altid er opdateret med seneste tilbud.
             </p>
           </motion.div>
           <motion.div

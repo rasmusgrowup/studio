@@ -13,19 +13,27 @@ export default function Cursor() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
-  const springConfig = { damping: 75, stiffness: 100 };
+  const springConfig = { damping: 20, stiffness: 100 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
   const variants = {
     default: {
-      background: 'rgb(255, 201, 98)',
-      background: 'radial-gradient(circle, rgba(255, 201, 98, 0.5) 0%, rgba(255, 201, 98, 0) 66%)',
-      height: 1600,
-      width: 1600,
+      background: 'var(--accent)',
+      border: '1px solid var(--accent)',
+      height: 26,
+      width: 26,
+      borderRadius: '13px',
       mixBlendMode: 'multiply',
-      borderRadius: '800px',
-      zIndex: '0',
+      zIndex: '9',
+    },
+    expand: {
+      background: 'var(--accent)',
+      height: 200,
+      width: 200,
+      borderRadius: '100px',
+      mixBlendMode: 'multiply',
+      zIndex: '9',
     }
   };
 
@@ -44,6 +52,11 @@ export default function Cursor() {
 
   const setDefaultVariant = () => {
     setCursorVariant('default')
+    setCursorText('')
+  }
+
+  const setExpandVariant = () => {
+    setCursorVariant('expand')
     setCursorText('')
   }
 

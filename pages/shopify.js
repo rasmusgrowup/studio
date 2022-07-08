@@ -111,7 +111,7 @@ function Shopify({ title, description }) {
         <p>
         Shopify er en alt-i-en webshop-løsning, som tusinder af virksomheder benytter til dagligt. Foruden deres backend-system, tilbyder de et økosystem af apps og integrationer, som kan bruges til at drive en netbutik — og de har heldigvis fokuseret på, at gøre driften af butikken så simpel som mulig. Med Shopify kan i selv oprette og ændre i jeres produkter, oprette udsalg og kollektioner, skrive blog-indlæg, oprette nye sider, oprette email-flows og alt andet købmandshjertet måtte begære.<br/><br/>
         Problemet med Shopify kan dog være, at man bliver nødt til at lave sin webshop efter den samme skabelon, som tusindvis af andre virksomheder. Det betyder at i mister muligheden for at overbevise jeres brugere om, at i er et unikt og seriøst brand. Det problem løser vi — vi udvikler jeres helt eget, unikke Shopify-tema.<br/><br/>
-        Vi er certificerede Shopify partnere. Det betyder at i får ekstra god support til Shopify hos os, og at vi kan videredvikle på jeres webshop. Det betyder også, at vi kan skræddersy en Shopify-løsning, til jeres unikke behov.
+        Vi er certificerede Shopify partnere. Det betyder at i får ekstra god support til Shopify hos os, og at vi kan videreudvikle på jeres webshop. Det betyder også, at vi kan skræddersy en Shopify-løsning, til jeres unikke behov.
         </p>
       </motion.div>
       <section className={styles.waterFall}>
@@ -130,10 +130,10 @@ function Shopify({ title, description }) {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/shopify/twelveinch_forside.mp4'} type='video/mp4' />
+              <source src={'/shopify/twelveinch_backend.mp4'} type='video/mp4' />
             </video>
             <p>
-              Vi udvikler skræddersyede Shopify-løsninger, som her til Twelve Inch. Deres Shopify tema er udviklet af os direkte efter deres behov. Det betyder at de får en unik og enestående webshop.
+              Med Shopify har i mulighed for selv at rykke rundt på og oprette nye sektioner til alle hjemmesidens sider — men kun hvis jeres tema understøtter Shopify 2.0, og det gør vores temaer naturligvis.
             </p>
           </motion.div>
           <motion.div
@@ -150,10 +150,10 @@ function Shopify({ title, description }) {
               playsInline
               style={{ objectFit: 'cover' }}
               >
-              <source src={'/shopify/twelveinch_backend.mp4'} type='video/mp4' />
+              <source src={'/shopify/twelveinch_forside.mp4'} type='video/mp4' />
             </video>
             <p>
-              Med Shopify har i mulighed for selv at rykke rundt på og oprette nye sektioner til alle hjemmesidens sider — men kun hvis jeres tema understøtter Shopify 2.0, og det gør vores temaer naturligvis.
+              Vi udvikler skræddersyede Shopify-løsninger, som her til Twelve Inch. Deres Shopify tema er udviklet af os direkte efter deres behov. Det betyder at de får en unik og enestående webshop.
             </p>
           </motion.div>
           <motion.div

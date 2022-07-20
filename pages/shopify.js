@@ -183,7 +183,7 @@ function Shopify({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '45vw'}}>
-            <Image src={Pral} layout='responsive'  />
+            <Image src={Pral} layout='responsive' quality='100'/>
             <p>
               En anden service vi tilbyder er tilpasning af udseende og funktionaliteter i eksisterende temaer. www.pral.dk er et eksempel på dette, hvor vi både tilføjede nye funktioner, og tilpassede temaets udseende.
             </p>
@@ -195,7 +195,7 @@ function Shopify({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '44vw'}}>
-            <Image src={PralProduktside} layout='responsive' />
+            <Image src={PralProduktside} layout='responsive' quality='100'/>
             <p>
               En af de funktionaliteter vi udbyggede var produktvælgeren.
             </p>
@@ -207,7 +207,7 @@ function Shopify({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '20vw'}}>
-            <Image src={OrganicMobile} layout='responsive' />
+            <Image src={OrganicMobile} layout='responsive' quality='100'/>
             <p>
               Sådan så theorganiccrave.com ud på lanceringsdagen. Vi har udviklet en skræddersyet Shopify-løsning til The Organic Crave Company — inklusive billeder, videoer og butikkens udseende.
             </p>
@@ -219,7 +219,7 @@ function Shopify({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '43vw'}}>
-            <Image src={Organic} layout='responsive' />
+            <Image src={Organic} layout='responsive' quality='100'/>
             <p>
               Den skræddersyede løsning til The Organic Crave Company blev leveret på godt og vel 4 måneder.
             </p>

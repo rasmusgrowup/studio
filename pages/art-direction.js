@@ -131,7 +131,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '40vw'}}>
-            <Image src={Havnen} layout='responsive' />
+            <Image src={Havnen} layout='responsive' quality='100'/>
             <p>
               Her ses et skud bagom videoen, som du ser herover. Vi samarbejder med dygtige fotografer om at skabe videoer og billeder, tiltænkt til brug på hjemmesider og sociale medier.
             </p>
@@ -143,7 +143,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '30vw'}}>
-            <Image src={Havnen2} layout='responsive' />
+            <Image src={Havnen2} layout='responsive' quality='100'/>
             <p>
               Vores filosofi er, at fotograferne skal have plads til at være kreative og få de rette skud. Vi tager derfor et skridt tilbage, og sørger for at bevare overblikket over, om produkterne er synlige, modellen er stylet rigtigt og om drejebogen overholdes.
             </p>
@@ -155,7 +155,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '27vw'}}>
-            <Image src={Studiet} layout='responsive' />
+            <Image src={Studiet} layout='responsive' quality='100'/>
             <p>
               Vi sørger som sagt for at finde tøj til modellen, og instruer vedkommende i, hvordan de skal bevæge sig eller se ud på billedet.
             </p>
@@ -167,7 +167,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '42vw'}}>
-            <Image src={Studiet2} layout='responsive' />
+            <Image src={Studiet2} layout='responsive' quality='100'/>
             <p>
               Og så står vi i baggrunden, og sørger for at fotograferne har plads til at arbejde, og at i som kunde, får alle de billeder, i har brug for, samt kvalitetssikrer.
             </p>
@@ -179,7 +179,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '22vw'}}>
-            <Image src={Studiet3} layout='responsive'  />
+            <Image src={Studiet3} layout='responsive' quality='100'/>
             <p>
               Når billederne er taget, kommer de en tur igennem photoshop, enten hos os eller fotogaferne, og bliver afleveret i passende formater, så de er klar til brug.
             </p>
@@ -191,7 +191,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '27vw'}}>
-            <Image src={Studiet4} layout='responsive'  />
+            <Image src={Studiet4} layout='responsive' quality='100'/>
             <p>
               Her ses Rasmus, der er igang med at instruere modellen i, hvordan hun skal holde pladerne. En lille, men meget vigtig detalje, da Twelve Inchs kunder, er meget ømtålelige med deres plader. Det er sådanne detajler vi sikrer, bliver overholdt.
             </p>
@@ -203,7 +203,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '40vw'}}>
-            <Image src={Studiet5} layout='responsive'  />
+            <Image src={Studiet5} layout='responsive' quality='100'/>
             <p>
               Her ses det endelige skud. Vi sørgede for at kontakte virksomheder, der ville udlåne møbler og regi, samt fandt en stylist, der kunne style miljøet. Produkterne står det rigtige sted i billedet, og modellen holder pladen helt korrekt.
             </p>
@@ -255,7 +255,7 @@ function ArtDirection({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '34vw'}}>
-            <Image src={Mickleit} layout='responsive' />
+            <Image src={Mickleit} layout='responsive' quality='100'/>
             <p>
               Et simpelt skud som dette, er resultatet af et godt forarbejde. Der skal findes den rigtige model, tøjet skal passe til smykkerne — som er produktet der sælges her — en stol at sidde på, modellen skal instrueres, så smykkerne vises korrekt, fotograferne skal ligge det rette lys, så hudfarve og smykker ser korrekte ud, og meget mere.
             </p>

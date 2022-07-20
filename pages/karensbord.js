@@ -226,7 +226,7 @@ function Karensbord({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '44vw'}}>
-            <Image src={Webshot} layout='responsive' />
+            <Image src={Webshot} layout='responsive' quality='100'/>
             <p>
               Foruden at levere Shopify-skabelonen, har vi hjulpet Karens Bord med at opbygge deres sider, tilføje produkter og tilføje 3. parts integrationer til butikken.
             </p>
@@ -238,7 +238,7 @@ function Karensbord({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '28vw'}}>
-            <Image src={Webshot2} layout='responsive' />
+            <Image src={Webshot2} layout='responsive' quality='100'/>
             <p>
               Selvom vi ikke har lavet en decideret visuel identitet til Karens Bord  — endnu — har vi sørget for, at hele hjemmesiden har et ensartet udtryk.
             </p>
@@ -250,7 +250,7 @@ function Karensbord({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '40vw'}}>
-            <Image src={Webshot3} layout='responsive' />
+            <Image src={Webshot3} layout='responsive' quality='100'/>
             <p>
               Karens Bord kan supplere deres udlejning af service med salg fra deres webshop.
             </p>
@@ -262,7 +262,7 @@ function Karensbord({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '20vw'}}>
-            <Image src={Mobileshot} layout='responsive' />
+            <Image src={Mobileshot} layout='responsive' quality='100'/>
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -274,7 +274,7 @@ function Karensbord({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '50vw'}}>
-            <Image src={Webshot4} layout='responsive' />
+            <Image src={Webshot4} layout='responsive' quality='100'/>
             <p>
               Vi er super vilde med Karens Bords billedstil. Her kan man virkelig se, hvor vigtigt det er, at få produceret flotte billeder til hjemmesiden.
             </p>

@@ -21,7 +21,7 @@ const titelWords = [
   'leverede ',
   'en ',
   'skræddersyet ',
-  'Shopify-',
+  'Shopify ',
   'løsning ',
   'til ',
   'den ',
@@ -229,7 +229,7 @@ function Organic({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '42vw'}}>
-            <Image src={Webshot} layout='responsive' />
+            <Image src={Webshot} layout='responsive' quality='100'/>
             <p>
               Sådan så theorganiccrave.com ud på lanceringsdagen. De billeder, vi har hjulpet med at producere, danner hele online universet.
             </p>
@@ -241,7 +241,7 @@ function Organic({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '27vw'}}>
-            <Image src={Bagom} layout='responsive' />
+            <Image src={Bagom} layout='responsive' quality='100'/>
             <p>
               Vi hjalp til på fotodagen, hvor vi arbejdede systematisk efter en drejebog. Vi fandt frem til en egnet håndmodel og sørgede for at style hende, med tøj i matchende farver til produkter.
             </p>
@@ -273,7 +273,7 @@ function Organic({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '32vw'}}>
-            <Image src={Havnen} layout='responsive' />
+            <Image src={Havnen} layout='responsive' quality='100'/>
             <p>
               Her ses vi instruere modellen. Vi kigger over skulderen på fotografen, for at sørge for, at video-klippene fra havnen, passer sammen med billederne fra studiet.
             </p>
@@ -285,7 +285,7 @@ function Organic({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '34vw'}}>
-            <Image src={Studie} layout='responsive' />
+            <Image src={Studie} layout='responsive' quality='100'/>
             <p>
               Her ses håndmodellen med matchene skjorte.
             </p>
@@ -297,7 +297,7 @@ function Organic({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '20vw'}}>
-            <Image src={Insta} layout='responsive' />
+            <Image src={Insta} layout='responsive' quality='100'/>
             <p>
               Henover sommeren 2020 stod for at poste og promovere The Organic Craves produkter på Instagram og TikTok.
             </p>

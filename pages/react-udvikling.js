@@ -140,7 +140,7 @@ function ReactUdvikling({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '22vw'}}>
-            <Image src={StojMobile} layout='responsive' />
+            <Image src={StojMobile} layout='responsive' quality='100'/>
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -152,7 +152,7 @@ function ReactUdvikling({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '34vw'}}>
-            <Image src={HejLiv} layout='responsive' />
+            <Image src={HejLiv} layout='responsive' quality='100'/>
             <p>
               Her ses forsiden til hejliv.dk — et microsite, der viser Liv Cramer Holmes arbejde. Microsites er utroligt hurtige at udvikle i React — det kan tage helt ned til en uge at udvikle og publisere.
             </p>
@@ -164,7 +164,7 @@ function ReactUdvikling({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '30vw'}}>
-            <Image src={ChefJen} layout='responsive' />
+            <Image src={ChefJen} layout='responsive' quality='100'/>
             <p>
               Chef Jen er lavet i React med GraphCMS som backend-system. Det betyder at Chef Jen selv kan tilføje eller fjerne menuer på hjemmesiden, så den altid er opdateret med seneste tilbud.
             </p>
@@ -196,7 +196,7 @@ function ReactUdvikling({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '42vw'}}>
-            <Image src={GraphCMS} layout='responsive' />
+            <Image src={GraphCMS} layout='responsive' quality='100'/>
             <p>
               Til digitaldogme.dk har vi desuden integreret et fremragende cms-system, kaldet GraphCMS. Digital Dogme kan dermed selv vedligeholde hjemmesiden, ved at opdatere siderne med nye tekster og sektioner.
             </p>
@@ -208,7 +208,7 @@ function ReactUdvikling({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '20vw'}}>
-            <Image src={Daniel} layout='responsive' />
+            <Image src={Daniel} layout='responsive' quality='100'/>
             <p>
               Vi drømmer om at skabe unikke og mindeværdige hjemmesider, der bliver kendt for deres simple og professionelle udtryk — vigtigst er det dog, at i som kunde får et værktøj, der understøtter jeres forretning.
             </p>
@@ -220,7 +220,7 @@ function ReactUdvikling({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '46vw'}}>
-            <Image src={MariasRum} layout='responsive' />
+            <Image src={MariasRum} layout='responsive' quality='100'/>
             <p>
               Marias Rum er udviklet i React, med NEXT.JS som lag oven på, og et CMS-system tilkoblet, så hun selv kan redigere i hjemmesidens indhold, og skrive nye indlæg til bloggen.
             </p>

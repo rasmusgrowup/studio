@@ -120,7 +120,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '40vw'}}>
-            <Image src={DigitalDogme} layout='responsive' />
+            <Image src={DigitalDogme} layout='responsive' quality='100'/>
             <p>
               Digital Dogme er vores nyeste projekt indenfor identitetsdesign. Vi fik til opgave at lave en visuel identitet, som skulle passe til en corporate og professionel branche.
             </p>
@@ -132,7 +132,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '27vw'}}>
-            <Image src={Poster} layout='responsive' />
+            <Image src={Poster} layout='responsive' quality='100'/>
             <p>
               I logoet markerer vi <i>IT</i> med en farve, fordi Digital Dogme handler om digital opkvalificering af den danske arbejdsstyrke. Fonttypen er desuden neutral, og farvepaletten er ikke alt for udfordrende.
             </p>
@@ -144,7 +144,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '24vw'}}>
-            <Image src={Visitkort} layout='responsive' />
+            <Image src={Visitkort} layout='responsive' quality='100'/>
             <p>
               Vi fik til opgave at give DABEA en ny visuel identitet i efteråret 2021.
             </p>
@@ -156,7 +156,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '30vw'}}>
-            <Image src={Dabea} layout='responsive' />
+            <Image src={Dabea} layout='responsive' quality='100'/>
             <p>
               DABEAs nye primærfarve er mørkeblå, og fonttypen er Lato. To ret sikre valg, der ikke udfordrer for meget, men netop passer til ejendomsbranchen.
             </p>
@@ -168,7 +168,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '40vw'}}>
-            <Image src={DabeaWeb} layout='responsive' />
+            <Image src={DabeaWeb} layout='responsive' quality='100'/>
             <p>
               Vi overførte den nye visuelle identitet til DABEAs hjemmeside.
             </p>
@@ -180,7 +180,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '22vw'}}>
-            <Image src={FlexiFloors} layout='responsive' />
+            <Image src={FlexiFloors} layout='responsive' quality='100'/>
             <p>
               Vi prøver altid at gøre logoet så simpelt, som muligt — jo mere simpelt logoet er, jo nemmere er det at huske.
             </p>
@@ -192,7 +192,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '42vw'}}>
-            <Image src={Tinekhome} layout='responsive' />
+            <Image src={Tinekhome} layout='responsive' quality='100'/>
             <p>
               Tinekhomes nye udtryk på hjemmesiden, er et resultat af en opdateret visuel identitet.
             </p>
@@ -204,7 +204,7 @@ function Identitetsdesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '66vw'}}>
-            <Image src={Twelveinch} layout='responsive' />
+            <Image src={Twelveinch} layout='responsive' quality='100'/>
             <p>
               Vi har løbende optimeret på og raffineret Twelve Inchs visuelle identitet. Det kan ses på hjemmesiden, der fornyligt fik et ansigtsløft.
             </p>

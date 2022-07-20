@@ -14,6 +14,8 @@ import Gallery from '../public/twelveinch/twelveinch_gallery.jpg'
 import Stue from '../public/twelveinch/twelveinch_stue.jpg'
 import Insta from '../public/twelveinch/twelveinch_instashot.jpg'
 import How from '../public/twelveinch/twelveinch_how.jpg'
+import Pinterest from '../public/twelveinch/twelveinch_popular_pinterest.jpg'
+import Packaging from '../public/twelveinch/twelveinch_packaging.jpg'
 
 import { motion } from 'framer-motion'
 
@@ -223,7 +225,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '46vw'}}>
-            <Image src={Webshot} layout='responsive' />
+            <Image src={Webshot} layout='responsive' quality='100'/>
             <p>
               Sådan så twelve-inch.com ud, efter at vi i foråret 2022 leverede en ny komplet Shopify-løsning.
             </p>
@@ -235,7 +237,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '27vw'}}>
-            <Image src={Webshot2} layout='responsive' />
+            <Image src={Webshot2} layout='responsive' quality='100'/>
             <p>
               Webshoppen er integreret med Amazon, således at produkterne kan sælges direkte fra Amazons lagre rundt om i verden. Det betyder at Twelve Inch kan sælge direkte til kunder i USA, EU, England, Japan, Australien mm. uden selv at have et lager, og med mindre end 2 dages levering.
             </p>
@@ -247,7 +249,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '22vw'}}>
-            <Image src={Mobileshot} layout='responsive' />
+            <Image src={Mobileshot} layout='responsive' quality='100'/>
             <p>
               Responsivt design er super vigtigt i dag, da op mod 80% af al trafik på en webshop, kan komme fra en smartphone. Vi optimerer til alle skærmstørrelser og moderne browsere.
             </p>
@@ -259,7 +261,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '44vw'}}>
-            <Image src={Stoj} layout='responsive' />
+            <Image src={Stoj} layout='responsive' quality='100'/>
             <p>
               Vi har udviklet en billedstil til Twelve Inch, der bruges på tværs af deres mange salgskanaler.
             </p>
@@ -271,7 +273,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '22vw'}}>
-            <Image src={How} layout='responsive' />
+            <Image src={How} layout='responsive' quality='100'/>
             <p>
               Vi har også udviklet en billedserie, der bruges på tryksager, hos forhandlere og på webshoppen, som viser hvordan produktet monteres og bruges.
             </p>
@@ -283,7 +285,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '40vw'}}>
-            <Image src={Gallery} layout='responsive' />
+            <Image src={Gallery} layout='responsive' quality='100'/>
             <p>
               Vi hjælper Twelve Inch med deres billedunivers, ved bl.a. at finde interiør og regi til photoshoots. Vi arbejder efter en drejebog, så vi sikrer, at i som kunde, får alle de billeder i har brug for.
             </p>
@@ -295,7 +297,7 @@ function Twelveinch({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '20vw'}}>
-            <Image src={Insta} layout='responsive' />
+            <Image src={Insta} layout='responsive' quality='100'/>
             <p>
               Vi sørger for at billederne passer til flere forskellige medier, herunder Instagram, Pinterest, Amazon osv.
             </p>
@@ -306,10 +308,34 @@ function Twelveinch({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='left' style={{ maxWidth: '46vw'}}>
-            <Image src={Stue} layout='responsive' />
+            data='left' style={{ maxWidth: '42vw'}}>
+            <Image src={Stue} layout='responsive' quality='100'/>
             <p>
-              De billeder vi har skabt til Twelve Inch, har samlet over 200.000 unikke visninger på Pinterest.
+              Vi sørger for at billederne passer til flere forskellige medier, herunder Instagram, Pinterest, Amazon osv.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='right' style={{ maxWidth: '28vw'}}>
+            <Image src={Pinterest} layout='responsive' quality='100'/>
+            <p>
+              Denne billedserie vi har skabt til Twelve Inch, har samlet over 200.000 unikke visninger på Pinterest.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='left' style={{ maxWidth: '30vw'}}>
+            <Image src={Packaging} layout='responsive' quality='100'/>
+            <p>
+              Og slutteligt har vi hjulpet Twelve Inch med fotografering af deres emballage, med henblik på brug på webshoppen og de andre salgskanaler.
             </p>
           </motion.div>
         </div>

@@ -10,7 +10,12 @@ import Buffetskilte from '../public/grafisk-design/Buffetskilte.jpg'
 import Logo from '../public/grafisk-design/Chefjen_logo.jpg'
 import Whisky from '../public/grafisk-design/Whisky_black.jpg'
 import Dabea from '../public/grafisk-design/Dabea_folder.jpg'
+import DabeaFoldetUd from '../public/grafisk-design/Dabea_foldet_ud.jpg'
+import DabeaRollup from '../public/grafisk-design/Dabea_rollup.jpg'
 import Postcard from '../public/grafisk-design/Twelveinch_postcard.jpg'
+import Visitkort from '../public/grafisk-design/CorpusCareClinic_visitkort.jpg'
+import Folie from '../public/grafisk-design/CorpusCareClinic_folie.jpg'
+import Facade from '../public/grafisk-design/CorpusCareClinic_facade.jpg'
 
 import { motion } from 'framer-motion'
 
@@ -118,7 +123,7 @@ function GrafiskDesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '30vw'}}>
-            <Image src={Buffetskilte} layout='responsive' />
+            <Image src={Buffetskilte} layout='responsive' quality='100'/>
             <p>
               Her ses et bud på en folder, vi har lavet til catering-virksomheden Chef Jen. Vores forslag er, at folderen kan stilles på bordet ved retterne, for at forklare gæsterne, hvad de spiser.
             </p>
@@ -130,7 +135,7 @@ function GrafiskDesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='right' style={{ maxWidth: '36vw'}}>
-            <Image src={Logo} layout='responsive' />
+            <Image src={Logo} layout='responsive' quality='100'/>
             <p>
               Logoet til Chef Jen er lavet således, at navnet <i>Jen</i> står tydeligt frem. Det er gjort i et forsøg på, at kommunikere ud, at Jen leverer en <i>personlig</i> og <i>professionel</i> service. Det er desuden super genkendeligt.
             </p>
@@ -142,7 +147,7 @@ function GrafiskDesign({ title, description }) {
             variants={variants}
             className={styles.drop}
             data='left' style={{ maxWidth: '25vw'}}>
-            <Image src={Whisky} layout='responsive' />
+            <Image src={Whisky} layout='responsive' quality='100'/>
             <p>
               Eksempelvis lægger man mærke til, at ordet <i>Jen</i> står tydeligt frem, i denne mockup.
             </p>
@@ -153,8 +158,8 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
-            data='right' style={{ maxWidth: '24vw'}}>
-            <Image src={Dabea} layout='responsive' />
+            data='right' style={{ maxWidth: '28vw'}}>
+            <Image src={Dabea} layout='responsive' quality='100'/>
             <p>
               Vi designer foldere, kataloger og andre tryksager. Vi afleverer en trykklar fil, så i selv kan finde en leverandør, eller vi leverer den færdige folder, fra det trykkeri vi samarbejder med.
             </p>
@@ -165,10 +170,70 @@ function GrafiskDesign({ title, description }) {
             viewport={how}
             variants={variants}
             className={styles.drop}
+            data='left' style={{ maxWidth: '34vw'}}>
+            <Image src={DabeaFoldetUd} layout='responsive' quality='100'/>
+            <p>
+              Folder-design for Dabea.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='right' style={{ maxWidth: '20vw'}}>
+            <Image src={DabeaRollup} layout='responsive' quality='100'/>
+            <p>
+              Roll-up til DABEA, til brug på en konference.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
             data='left' style={{ maxWidth: '42vw'}}>
-            <Image src={Postcard} layout='responsive' />
+            <Image src={Postcard} layout='responsive' quality='100'/>
             <p>
               Her ses en bunke postkort, som vi har lavet til Twelve Inch. Det er et postkort, der sendes med ved alle nye ordre, og er en metode til at score lidt ekstra point hos kunderne.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='right' style={{ maxWidth: '28vw'}}>
+            <Image src={Visitkort} layout='responsive' quality='100'/>
+            <p>
+              Visitkort for Corpus Care Clinic, med nye farver og fonttype.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='left' style={{ maxWidth: '28vw'}}>
+            <Image src={Folie} layout='responsive' quality='100'/>
+            <p>
+              Fornyelse af logo til Corpus Care Clinic. Essensen af det forrige logo er bevaret, så kunderne stadig kan genkende logoet — men er blevet strammet op og forenklet.
+            </p>
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={how}
+            variants={variants}
+            className={styles.drop}
+            data='right' style={{ maxWidth: '32vw'}}>
+            <Image src={Facade} layout='responsive' quality='100'/>
+            <p>
+              Det nye logo, med farve fra den nye farpalette og den nye fonttype på facaden til klinikken.
             </p>
           </motion.div>
         </div>

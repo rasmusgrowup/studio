@@ -89,7 +89,7 @@ function Organic({ title, description }) {
   }
 
   const how = {
-    margin: '0 0 -120px 0',
+    margin: '0px 0px -120px 0px',
     once: true,
   }
 

@@ -32,7 +32,7 @@ const titelWords = [
   'Direction ',
   'og ',
   'online ',
-  'markedsføring.'
+  'markedsføring'
 ];
 
 const howFirst = [

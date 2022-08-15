@@ -28,7 +28,7 @@ const titelWords = [
   'Shopify ',
   'på ',
   'få ',
-  'uger '
+  'uger'
 ];
 
 const howFirst = [

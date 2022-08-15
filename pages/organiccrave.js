@@ -30,7 +30,7 @@ const titelWords = [
   'the ',
   'Organic ',
   'Crave ',
-  'Company.'
+  'Company'
 ];
 
 const howFirst = [

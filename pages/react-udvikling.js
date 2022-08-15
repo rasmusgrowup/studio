@@ -26,7 +26,7 @@ const titelWords = [
   'start-ups ',
   'og ',
   'etablerede ',
-  'brands.'
+  'brands'
 ];
 
 function ReactUdvikling({ title, description }) {

@@ -30,7 +30,7 @@ const titelWords = [
   'hjemmeside ',
   'og ',
   'visuelle ',
-  'identitet.'
+  'identitet'
 ];
 
 function GrafiskDesign({ title, description }) {

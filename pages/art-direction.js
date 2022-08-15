@@ -29,7 +29,7 @@ const titelWords = [
   'tryksager ',
   'eller ',
   'sociale ',
-  'medier.'
+  'medier'
 ];
 
 function ArtDirection({ title, description }) {

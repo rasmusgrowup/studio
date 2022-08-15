@@ -30,7 +30,7 @@ const titelWords = [
   'start-ups ',
   'og ',
   'etablerede ',
-  'brands.'
+  'brands'
 ];
 
 function Shopify({ title, description }) {

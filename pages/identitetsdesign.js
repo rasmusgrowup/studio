@@ -27,7 +27,7 @@ const titelWords = [
   'start-ups ',
   'og ',
   'etablerede ',
-  'brands.'
+  'brands'
 ];
 
 function Identitetsdesign({ title, description }) {

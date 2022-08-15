@@ -52,7 +52,11 @@ export default function Cases() {
                   </div>
                 }
                 <div className={styles.info}>
-                  <p>{title}</p>
+                  <p style={{
+                    color: 'var(--accent)',
+                    marginBottom: '0.5em',
+                    fontSize: '1.1em'
+                  }}>{title}</p>
                   <p>{assignments}</p>
                   <p>{status}</p>
                 </div>

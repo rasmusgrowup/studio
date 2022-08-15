@@ -368,11 +368,21 @@
 
   p {
     display: block;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: left;
     text-transform: none;
-    max-width: 300px;
+    max-width: 340px;
     width: 100%;
+
+    &:before {
+      background-color: var(--accent);
+      border-radius: 4px;
+      content: '';
+      display: inline-block;
+      height: 8px;
+      margin-right: 0.5em;
+      width: 8px;
+    }
   }
 
   .drop[data='left'] {

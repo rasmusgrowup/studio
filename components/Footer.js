@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <motion.footer
       initial={{ opacity: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       className={styles.footer}>

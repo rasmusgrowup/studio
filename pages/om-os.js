@@ -118,7 +118,7 @@ function About({ title, description }) {
           <motion.li variants={items} className={scss.mantra}>
             <h2>Skræddersyede løsninger</h2>
             <p className={scss.p}>Skulle jeres behov ligge udenfor vores standardløsninger, tilbyder vi skræddersyede løsninger i både React og Shopify — således at i kan få en helt <b>unik hjemmeside.</b><br /><br />
-            Vi kan integrere jeres hjemmeside med alverdens API'er, bookingsystemer, tredjeparts-software og meget mere.
+            Vi kan integrere jeres hjemmeside med alverdens API&apos;er, bookingsystemer, tredjeparts-software og meget mere.
             </p>
           </motion.li>
         </motion.ul>

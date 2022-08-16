@@ -1,0 +1,165 @@
+@import 'core.scss';
+
+.mantras {
+  margin: 5vw auto 0;
+}
+
+.mantraList {
+  align-items: flex-start;
+  display: flex;
+  font-size: max(2vw, 21px);
+  list-style-type: decimal;
+
+  @media (max-width: $m) {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: max(2vw, 21px);
+  }
+
+  .mantra {
+    margin-right: 5vw;
+    width: 33%;
+
+    @media (min-width: $m) {
+      &:nth-of-type(2) {
+        margin-top: 8vw;
+      }
+
+      &:nth-of-type(3) {
+        margin-top: 16vw;
+      }
+    }
+
+    @media (max-width: $m) and (min-width: $s) {
+      margin-top: 5rem;
+      width: 55%;
+
+      &:nth-of-type(2) {
+        margin: 5rem auto;
+      }
+
+      &:nth-of-type(3) {
+        margin: 5rem 0 0 auto;
+      }
+    }
+
+    @media (max-width: $s) {
+      margin-top: 5rem;
+      width: 100%;
+
+      &:nth-of-type(1) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .p {
+    font-size: max(1.1vw, 17px);
+    text-transform: none;
+  }
+}
+
+.section {
+  margin-top: 2vw;
+
+  @media (max-width: $m) {
+    margin-top: 5rem;
+  }
+}
+
+.rasmus,
+.rie {
+  align-items: center;
+  display: flex;
+  width: 50%;
+
+  @media (max-width: $l) and (min-width: $s) {
+    width: 66%;
+  }
+
+  @media (max-width: $s) {
+    align-items: flex-start;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+}
+
+.rie {
+  margin: -8vw 0 0 auto;
+
+  @media (max-width: $l) {
+    margin: 2rem 0 0 auto;
+  }
+}
+
+.imageWrapper {
+  border-radius: 50%;
+  height: 26vw;
+  margin-right: 2rem;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+
+  @media (max-width: $l) {
+    height: 33vw;
+  }
+
+  @media (max-width: $s) {
+    height: 28vw;
+    margin-right: 1rem;
+    width: 30%;
+  }
+
+  .img {
+    filter: saturate(0);
+  }
+}
+
+.contentWrapper {
+  width: 50%;
+
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: max(1.5vw, 18px);
+  }
+
+  h3 {
+    color: var(--accent);
+    font-size: max(1.1vw, 16px);
+    margin-top: 0.5rem;
+  }
+
+  .p {
+    font-size: max(1vw, 15px);
+    text-transform: none;
+  }
+
+  .mail {
+    align-items: center;
+    color: var(--black);
+    display: inline-flex;
+    font-size: max(1.1vw, 14px);
+    margin-top: 1rem;
+  }
+
+  .mail::before {
+    background-color: var(--accent);
+    content: '';
+    display: inline-block;
+    border-radius: 4px;
+    height: 8px;
+    margin-right: 0.5rem;
+    width: 8px;
+  }
+
+  .mail:hover {
+    color: var(--accent);
+  }
+}

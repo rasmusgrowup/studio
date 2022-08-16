@@ -159,7 +159,7 @@ export default function Home() {
         <p className={styles.p}>
           Vi hjælper jer fra idé til færdigt <b>produkt.</b>
         </p>
-        <Link href='/'>
+        <Link href='/om-os'>
           <a className={styles.link}>
             Mere om os
           </a>

@@ -111,7 +111,7 @@ function GrafiskDesign({ title, description }) {
         <p>
         Vi har erfaring med at lave tryksager til alle tænkelige situationer. Vi arbejder grundigt med det grafiske udtryk, så det matcher jeres visuelle identitet.<br /><br/>
         Vi har lavet kataloger, indsalgsbrochurer, POS-materialer, emballage, postkort, certifikater, visitkort, klistermærker m.m. Vi kan desuden oversætte jeres tryksager til flere forskellige sprog, og har forbindelse til professionelle tekstforfattere.<br/><br/>
-        Får i lavet en visuel identitet hos os, sørger vi for at den er let at omsætte til grafiske elementer — hvis ikke, gør vi vores bedste for at trække jeres visuelle identitet ind i jeres nye tryksager. Vi har desuden et samarbejde med et trykkeri, således at vi kan lave prøvetryk af jeres tryksager, inden filerne sendes videre til jer. Alternativt kan trykkeriet selvfølgelig levere jeres tryksager.
+        Får i lavet en visuel identitet hos os, sørger vi for at den er let at omsætte til grafiske elementer — hvis ikke, gør vi vores bedste for at trække jeres visuelle identitet ind i jeres nye tryksager. Vi har desuden et samarbejde med et trykkeri, således at vi kan lave prøvetryk af jeres tryksager, inden filerne sendes videre til jer. Alternativt, kan trykkeriet selvfølgelig levere jeres tryksager.
         </p>
       </motion.div>
       <section className={styles.waterFall}>

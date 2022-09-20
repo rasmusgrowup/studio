@@ -1,0 +1,30 @@
+@import 'core.scss';
+
+.h1 {
+	margin: 2rem auto 2rem 0;
+	max-width: calc($m / 1.25);
+}
+
+.p {
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 1.5;
+	margin: 0 auto 4rem 0;
+	max-width: calc($m / 1.25);
+}
+
+.vilkaarGrid {
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 1.5;
+	margin: 0 auto 0 0;
+	max-width: calc($m / 1.25);
+
+	span {
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 4rem;
+	}
+}

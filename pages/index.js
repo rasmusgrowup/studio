@@ -136,11 +136,13 @@ export default function Home() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 1.2, delay: 2.6, ease: "easeOut" }}
           animate={{ opacity: 1, y: 0 }}>
+          {/*
           <Link href='mailto:hello@growupstudio.dk'>
             <a className={styles.mail}>
               hello@growupstudio.dk
             </a>
           </Link>
+          */}
         </motion.div>
       </section>
       <Cases />
@@ -159,11 +161,13 @@ export default function Home() {
         <p className={styles.p}>
           Vi hjælper jer fra idé til færdigt <b>produkt.</b>
         </p>
+        {/*
         <Link href='/om-os'>
           <a className={styles.link}>
             Mere om os
           </a>
         </Link>
+        */}
       </motion.section>
       <section className={styles.services}>
         <motion.h2
@@ -293,11 +297,13 @@ export default function Home() {
         <p className={styles.p}>
           Vi <b>optimerer</b> til alle skærme & moderne browsere
         </p>
+        {/*}
         <Link href='/'>
           <a className={styles.link}>
             interesseret i at få et uforpligtende bud på jeres egen løsning?
           </a>
         </Link>
+        */}
       </motion.section>
     </>
   )

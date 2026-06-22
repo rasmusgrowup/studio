@@ -23,10 +23,6 @@ export default function Menu() {
     setShowServices(!showServices)
   }
 
-  var navigateToAbout = () => {
-    router.push('/om-os')
-  }
-
   var setAll = () => {
     setShowCases(false)
     setShowContact(false)
@@ -41,9 +37,6 @@ export default function Menu() {
         </div>
         <div className={styles.li} onClick={toggleServices}>
             Services
-        </div>
-        <div className={styles.li} onClick={navigateToAbout}>
-            Om os
         </div>
       </div>
       <ul className={`${styles.cases} ${ showCases ? `${styles.show}` : `${styles.hide}` } `}>
